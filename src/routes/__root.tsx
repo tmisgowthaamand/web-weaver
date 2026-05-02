@@ -1,4 +1,5 @@
 import { Outlet, Link, createRootRoute, HeadContent, Scripts } from "@tanstack/react-router";
+import { CartProvider } from "@/contexts/CartContext";
 
 import appCss from "../styles.css?url";
 
@@ -29,14 +30,15 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { name: "grammarly", content: "false" },
+      { name: "grammarly-extension", content: "false" },
+      { title: "Parveen Packaging Industries" },
+      { name: "description", content: "Premium corrugated shipping boxes & packaging solutions for businesses" },
+      { name: "author", content: "Parveen Packaging Industries" },
+      { property: "og:title", content: "Parveen Packaging Industries" },
+      { property: "og:description", content: "Premium corrugated shipping boxes & packaging solutions for businesses" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
     ],
     links: [
       {
@@ -52,11 +54,11 @@ export const Route = createRootRoute({
 
 function RootShell({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
         <HeadContent />
       </head>
-      <body>
+      <body suppressHydrationWarning data-gramm="false" data-gramm_editor="false" data-enable-grammarly="false">
         {children}
         <Scripts />
       </body>
@@ -65,5 +67,9 @@ function RootShell({ children }: { children: React.ReactNode }) {
 }
 
 function RootComponent() {
-  return <Outlet />;
+  return (
+    <CartProvider>
+      <Outlet />
+    </CartProvider>
+  );
 }

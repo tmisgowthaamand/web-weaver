@@ -13,11 +13,15 @@ import { Route as TermsConditionsRouteImport } from './routes/terms-conditions'
 import { Route as ShippingPolicyRouteImport } from './routes/shipping-policy'
 import { Route as ProductsRouteImport } from './routes/products'
 import { Route as PrivacyPolicyRouteImport } from './routes/privacy-policy'
+import { Route as OrderSuccessRouteImport } from './routes/order-success'
 import { Route as EnquiryRouteImport } from './routes/enquiry'
 import { Route as ContactRouteImport } from './routes/contact'
+import { Route as CheckoutRouteImport } from './routes/checkout'
+import { Route as CartRouteImport } from './routes/cart'
 import { Route as CancellationRefundRouteImport } from './routes/cancellation-refund'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as ProductIdRouteImport } from './routes/product.$id'
 
 const TermsConditionsRoute = TermsConditionsRouteImport.update({
   id: '/terms-conditions',
@@ -39,6 +43,11 @@ const PrivacyPolicyRoute = PrivacyPolicyRouteImport.update({
   path: '/privacy-policy',
   getParentRoute: () => rootRouteImport,
 } as any)
+const OrderSuccessRoute = OrderSuccessRouteImport.update({
+  id: '/order-success',
+  path: '/order-success',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const EnquiryRoute = EnquiryRouteImport.update({
   id: '/enquiry',
   path: '/enquiry',
@@ -47,6 +56,16 @@ const EnquiryRoute = EnquiryRouteImport.update({
 const ContactRoute = ContactRouteImport.update({
   id: '/contact',
   path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CheckoutRoute = CheckoutRouteImport.update({
+  id: '/checkout',
+  path: '/checkout',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CartRoute = CartRouteImport.update({
+  id: '/cart',
+  path: '/cart',
   getParentRoute: () => rootRouteImport,
 } as any)
 const CancellationRefundRoute = CancellationRefundRouteImport.update({
@@ -64,40 +83,57 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ProductIdRoute = ProductIdRouteImport.update({
+  id: '/product/$id',
+  path: '/product/$id',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/cancellation-refund': typeof CancellationRefundRoute
+  '/cart': typeof CartRoute
+  '/checkout': typeof CheckoutRoute
   '/contact': typeof ContactRoute
   '/enquiry': typeof EnquiryRoute
+  '/order-success': typeof OrderSuccessRoute
   '/privacy-policy': typeof PrivacyPolicyRoute
   '/products': typeof ProductsRoute
   '/shipping-policy': typeof ShippingPolicyRoute
   '/terms-conditions': typeof TermsConditionsRoute
+  '/product/$id': typeof ProductIdRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/cancellation-refund': typeof CancellationRefundRoute
+  '/cart': typeof CartRoute
+  '/checkout': typeof CheckoutRoute
   '/contact': typeof ContactRoute
   '/enquiry': typeof EnquiryRoute
+  '/order-success': typeof OrderSuccessRoute
   '/privacy-policy': typeof PrivacyPolicyRoute
   '/products': typeof ProductsRoute
   '/shipping-policy': typeof ShippingPolicyRoute
   '/terms-conditions': typeof TermsConditionsRoute
+  '/product/$id': typeof ProductIdRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/cancellation-refund': typeof CancellationRefundRoute
+  '/cart': typeof CartRoute
+  '/checkout': typeof CheckoutRoute
   '/contact': typeof ContactRoute
   '/enquiry': typeof EnquiryRoute
+  '/order-success': typeof OrderSuccessRoute
   '/privacy-policy': typeof PrivacyPolicyRoute
   '/products': typeof ProductsRoute
   '/shipping-policy': typeof ShippingPolicyRoute
   '/terms-conditions': typeof TermsConditionsRoute
+  '/product/$id': typeof ProductIdRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -105,46 +141,62 @@ export interface FileRouteTypes {
     | '/'
     | '/about'
     | '/cancellation-refund'
+    | '/cart'
+    | '/checkout'
     | '/contact'
     | '/enquiry'
+    | '/order-success'
     | '/privacy-policy'
     | '/products'
     | '/shipping-policy'
     | '/terms-conditions'
+    | '/product/$id'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
     | '/about'
     | '/cancellation-refund'
+    | '/cart'
+    | '/checkout'
     | '/contact'
     | '/enquiry'
+    | '/order-success'
     | '/privacy-policy'
     | '/products'
     | '/shipping-policy'
     | '/terms-conditions'
+    | '/product/$id'
   id:
     | '__root__'
     | '/'
     | '/about'
     | '/cancellation-refund'
+    | '/cart'
+    | '/checkout'
     | '/contact'
     | '/enquiry'
+    | '/order-success'
     | '/privacy-policy'
     | '/products'
     | '/shipping-policy'
     | '/terms-conditions'
+    | '/product/$id'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
   CancellationRefundRoute: typeof CancellationRefundRoute
+  CartRoute: typeof CartRoute
+  CheckoutRoute: typeof CheckoutRoute
   ContactRoute: typeof ContactRoute
   EnquiryRoute: typeof EnquiryRoute
+  OrderSuccessRoute: typeof OrderSuccessRoute
   PrivacyPolicyRoute: typeof PrivacyPolicyRoute
   ProductsRoute: typeof ProductsRoute
   ShippingPolicyRoute: typeof ShippingPolicyRoute
   TermsConditionsRoute: typeof TermsConditionsRoute
+  ProductIdRoute: typeof ProductIdRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -177,6 +229,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof PrivacyPolicyRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/order-success': {
+      id: '/order-success'
+      path: '/order-success'
+      fullPath: '/order-success'
+      preLoaderRoute: typeof OrderSuccessRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/enquiry': {
       id: '/enquiry'
       path: '/enquiry'
@@ -189,6 +248,20 @@ declare module '@tanstack/react-router' {
       path: '/contact'
       fullPath: '/contact'
       preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/checkout': {
+      id: '/checkout'
+      path: '/checkout'
+      fullPath: '/checkout'
+      preLoaderRoute: typeof CheckoutRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/cart': {
+      id: '/cart'
+      path: '/cart'
+      fullPath: '/cart'
+      preLoaderRoute: typeof CartRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/cancellation-refund': {
@@ -212,6 +285,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/product/$id': {
+      id: '/product/$id'
+      path: '/product/$id'
+      fullPath: '/product/$id'
+      preLoaderRoute: typeof ProductIdRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
@@ -219,12 +299,16 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
   CancellationRefundRoute: CancellationRefundRoute,
+  CartRoute: CartRoute,
+  CheckoutRoute: CheckoutRoute,
   ContactRoute: ContactRoute,
   EnquiryRoute: EnquiryRoute,
+  OrderSuccessRoute: OrderSuccessRoute,
   PrivacyPolicyRoute: PrivacyPolicyRoute,
   ProductsRoute: ProductsRoute,
   ShippingPolicyRoute: ShippingPolicyRoute,
   TermsConditionsRoute: TermsConditionsRoute,
+  ProductIdRoute: ProductIdRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
