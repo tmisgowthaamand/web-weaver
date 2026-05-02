@@ -1,16 +1,19 @@
-import { useRouter } from "@tanstack/react-router";
+import { useNavigate } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 import { SiteLayout } from "./SiteLayout";
 
 export function PolicyPage({ title, children }: { title: string; children: React.ReactNode }) {
-  const router = useRouter();
+  const navigate = useNavigate();
   return (
     <SiteLayout>
       <div className="mx-auto max-w-3xl px-4 py-12">
         <button
           onClick={() => {
-            if (window.history.length > 1) router.history.back();
-            else router.navigate({ to: "/" });
+            if (window.history.length > 1) {
+              window.history.back();
+            } else {
+              navigate("/");
+            }
           }}
           className="inline-flex items-center gap-2 text-sm text-primary hover:underline mb-6"
         >

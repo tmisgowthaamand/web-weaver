@@ -26,9 +26,17 @@ export function CartProvider({ children }: { children: ReactNode }) {
 
   // Load cart from localStorage after hydration
   useEffect(() => {
-    const saved = localStorage.getItem('cart');
-    if (saved) {
-      setCart(JSON.parse(saved));
+    try {
+      const saved = localStorage.getItem('cart');
+      if (saved) {
+        const parsed = JSON.parse(saved);
+        if (Array.isArray(parsed)) {
+          setCart(parsed);
+        }
+      }
+    } catch (error) {
+      console.error('Failed to load cart from localStorage:', error);
+      localStorage.removeItem('cart');
     }
     setIsHydrated(true);
   }, []);
@@ -42,18 +50,22 @@ export function CartProvider({ children }: { children: ReactNode }) {
 
   const addToCart = (item: Omit<CartItem, 'quantity'>) => {
     setCart((prev) => {
-      const existing = prev.find((i) => i.id === item.id);
+      const currentCart = Array.isArray(prev) ? prev : [];
+      const existing = currentCart.find((i) => i.id === item.id);
       if (existing) {
-        return prev.map((i) =>
+        return currentCart.map((i) =>
           i.id === item.id ? { ...i, quantity: i.quantity + 1 } : i
         );
       }
-      return [...prev, { ...item, quantity: 1 }];
+      return [...currentCart, { ...item, quantity: 1 }];
     });
   };
 
   const removeFromCart = (id: string) => {
-    setCart((prev) => prev.filter((item) => item.id !== id));
+    setCart((prev) => {
+      const currentCart = Array.isArray(prev) ? prev : [];
+      return currentCart.filter((item) => item.id !== id);
+    });
   };
 
   const updateQuantity = (id: string, quantity: number) => {
@@ -61,9 +73,10 @@ export function CartProvider({ children }: { children: ReactNode }) {
       removeFromCart(id);
       return;
     }
-    setCart((prev) =>
-      prev.map((item) => (item.id === id ? { ...item, quantity } : item))
-    );
+    setCart((prev) => {
+      const currentCart = Array.isArray(prev) ? prev : [];
+      return currentCart.map((item) => (item.id === id ? { ...item, quantity } : item));
+    });
   };
 
   const clearCart = () => {
@@ -71,10 +84,12 @@ export function CartProvider({ children }: { children: ReactNode }) {
   };
 
   const getTotalItems = () => {
+    if (!Array.isArray(cart)) return 0;
     return cart.reduce((sum, item) => sum + item.quantity, 0);
   };
 
   const getTotalPrice = () => {
+    if (!Array.isArray(cart)) return 0;
     return cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
   };
 
