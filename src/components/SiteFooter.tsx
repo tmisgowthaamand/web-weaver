@@ -14,12 +14,15 @@ export function SiteFooter() {
     <footer className="mt-20 border-t border-border bg-secondary/40">
       <div className="mx-auto max-w-6xl px-4 py-12 grid gap-10 md:grid-cols-3">
         <div>
-          <Link to="/" className="flex items-center gap-2 font-bold text-lg text-primary">
-            <Package className="h-6 w-6" />
-            <span>Parveen Packaging</span>
+          <Link to="/" className="flex items-center gap-2 font-bold text-primary">
+            <Package className="h-6 w-6 flex-shrink-0" />
+            <span className="text-base leading-tight">PARVEEN PACKAGING INDUSTRIES</span>
           </Link>
           <p className="mt-3 text-sm text-muted-foreground">
             Premium corrugated shipping boxes & packaging solutions for businesses of every size.
+          </p>
+          <p className="mt-2 text-xs text-muted-foreground">
+            Proprietor: Mohamedsulaiman Ajmulkhan
           </p>
         </div>
 
@@ -39,7 +42,7 @@ export function SiteFooter() {
         <div>
           <h4 className="font-semibold text-foreground mb-3">Contact</h4>
           <ul className="space-y-2 text-sm text-muted-foreground">
-            <li className="flex items-start gap-2"><MapPin className="h-4 w-4 mt-0.5 text-primary" /> 12 Industrial Park, Mumbai</li>
+            <li className="flex items-start gap-2"><MapPin className="h-4 w-4 mt-0.5 text-primary flex-shrink-0" /> <span>857/1121, B V Colony 25th Street,<br />Vyasarpadi, Chennai, Tamil Nadu 600039</span></li>
             <li className="flex items-center gap-2"><Phone className="h-4 w-4 text-primary" /> +91 98765 43210</li>
             <li className="flex items-center gap-2"><Mail className="h-4 w-4 text-primary" /> hello@parveenpackaging.in</li>
           </ul>

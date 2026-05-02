@@ -30,7 +30,7 @@ function About() {
         <div>
           <h2 className="text-2xl font-bold mb-3">Our story</h2>
           <p className="text-muted-foreground leading-relaxed">
-            Parveen Packaging started in a small Mumbai workshop with a simple goal: make great packaging easy to buy.
+            Parveen Packaging started in a small Chennai workshop with a simple goal: make great packaging easy to buy.
             A decade later, we serve thousands of small businesses, e-commerce sellers and enterprises across India and beyond.
           </p>
           <p className="text-muted-foreground leading-relaxed mt-3">

@@ -17,7 +17,7 @@ export const Route = createFileRoute("/terms-conditions")({
       <h2>Limitation of Liability</h2>
       <p>Parveen Packaging is not liable for indirect or consequential damages arising from use of products beyond their intended purpose.</p>
       <h2>Governing Law</h2>
-      <p>These terms are governed by the laws of India. Disputes are subject to the jurisdiction of Mumbai courts.</p>
+      <p>These terms are governed by the laws of India. Disputes are subject to the jurisdiction of Chennai courts.</p>
     </PolicyPage>
   ),
 });

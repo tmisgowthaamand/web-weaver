@@ -5,7 +5,7 @@ export const Route = createFileRoute("/shipping-policy")({
   head: () => ({ meta: [{ title: "Shipping Policy — Parveen Packaging" }, { name: "description", content: "Parveen Packaging shipping policy." }] }),
   component: () => (
     <PolicyPage title="Shipping Policy">
-      <p>We dispatch all orders within 1–2 business days from our Mumbai warehouse.</p>
+      <p>We dispatch all orders within 1–2 business days from our Chennai warehouse.</p>
       <h2>Delivery Timeline</h2>
       <p>Standard delivery takes 3–5 business days within India. Remote pin codes may take up to 7 business days.</p>
       <h2>Shipping Charges</h2>

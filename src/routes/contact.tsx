@@ -16,7 +16,7 @@ export const Route = createFileRoute("/contact")({
 
 function Contact() {
   const items = [
-    { icon: MapPin, title: "Visit", lines: ["12 Industrial Park", "Andheri East, Mumbai 400072"] },
+    { icon: MapPin, title: "Visit", lines: ["857/1121, B V Colony 25th Street", "Vyasarpadi, Chennai, Tamil Nadu 600039"] },
     { icon: Phone, title: "Call", lines: ["+91 98765 43210", "Mon–Sat, 9am – 7pm"] },
     { icon: Mail, title: "Email", lines: ["hello@parveenpackaging.in", "support@parveenpackaging.in"] },
     { icon: Clock, title: "Hours", lines: ["Mon–Fri: 9am – 7pm", "Sat: 10am – 4pm"] },
