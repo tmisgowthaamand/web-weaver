@@ -25,7 +25,9 @@ function Contact() {
     <SiteLayout>
       <div className="mx-auto max-w-5xl px-4 py-12">
         <h1 className="text-4xl font-bold">Contact us</h1>
-        <p className="text-muted-foreground mt-2">We'd love to hear from you. Reach out through any of the channels below.</p>
+        <p className="text-muted-foreground mt-2">
+          Run by proprietor Mohamedsulaiman Ajmulkhan, serving Chennai since 2017. Drop by the workshop, give us a call, or send a message — we'll get back to you the same day.
+        </p>
         <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {items.map((it) => (
             <div key={it.title} className="p-6 rounded-xl bg-card border border-border" style={{ boxShadow: "var(--shadow-card)" }}>
