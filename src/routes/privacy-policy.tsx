@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { PolicyPage } from "@/components/PolicyPage";
 
 export const Route = createFileRoute("/privacy-policy")({
-  head: () => ({ meta: [{ title: "Privacy Policy — BoxCraft" }, { name: "description", content: "How BoxCraft handles your data." }] }),
+  head: () => ({ meta: [{ title: "Privacy Policy — Parveen Packaging" }, { name: "description", content: "How Parveen Packaging handles your data." }] }),
   component: () => (
     <PolicyPage title="Privacy Policy">
       <p>Your privacy is important to us. This policy explains how we collect, use and protect your information.</p>
@@ -15,7 +15,7 @@ export const Route = createFileRoute("/privacy-policy")({
       <h2>Cookies</h2>
       <p>We use essential cookies for site functionality and analytics cookies to understand usage patterns.</p>
       <h2>Your Rights</h2>
-      <p>You can request access, correction or deletion of your data anytime by emailing privacy@boxcraft.in.</p>
+      <p>You can request access, correction or deletion of your data anytime by emailing privacy@parveenpackaging.in.</p>
     </PolicyPage>
   ),
 });

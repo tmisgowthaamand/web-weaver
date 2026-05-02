@@ -6,9 +6,9 @@ import { ArrowRight, Truck, Shield, Recycle, Star } from "lucide-react";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "BoxCraft — Premium Shipping & Packaging Boxes" },
+      { title: "Parveen Packaging — Premium Shipping & Packaging Boxes" },
       { name: "description", content: "Durable corrugated shipping boxes, mailers and gift packaging for businesses." },
-      { property: "og:title", content: "BoxCraft — Premium Shipping & Packaging Boxes" },
+      { property: "og:title", content: "Parveen Packaging — Premium Shipping & Packaging Boxes" },
       { property: "og:description", content: "Durable corrugated shipping boxes, mailers and gift packaging for businesses." },
     ],
   }),

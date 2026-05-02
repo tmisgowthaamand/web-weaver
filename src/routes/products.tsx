@@ -7,9 +7,9 @@ import { useState } from "react";
 export const Route = createFileRoute("/products")({
   head: () => ({
     meta: [
-      { title: "Products — BoxCraft Packaging" },
+      { title: "Products — Parveen Packaging Industries" },
       { name: "description", content: "Browse our catalog of shipping boxes, mailers and gift packaging." },
-      { property: "og:title", content: "Products — BoxCraft Packaging" },
+      { property: "og:title", content: "Products — Parveen Packaging Industries" },
       { property: "og:description", content: "Browse our catalog of shipping boxes, mailers and gift packaging." },
     ],
   }),
