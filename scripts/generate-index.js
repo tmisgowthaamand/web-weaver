@@ -1,5 +1,4 @@
 import { writeFileSync, readdirSync } from 'fs';
-import { join } from 'path';
 
 // Find the main JS bundle
 const assetsDir = 'dist/client/assets';
