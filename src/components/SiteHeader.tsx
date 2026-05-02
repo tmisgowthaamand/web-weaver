@@ -15,9 +15,9 @@ export function SiteHeader() {
   return (
     <header className="sticky top-0 z-40 w-full border-b border-border/60 bg-background/85 backdrop-blur">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4">
-        <Link to="/" className="flex items-center gap-2 font-bold text-lg text-primary">
-          <Package className="h-6 w-6" />
-          <span>Parveen Packaging</span>
+        <Link to="/" className="flex items-center gap-2 font-bold text-primary">
+          <Package className="h-6 w-6 flex-shrink-0" />
+          <span className="text-sm md:text-base leading-tight tracking-tight">PARVEEN PACKAGING<br className="hidden sm:inline" /><span className="sm:block"> INDUSTRIES</span></span>
         </Link>
         <nav className="hidden md:flex items-center gap-1">
           {navLinks.map((l) => (
