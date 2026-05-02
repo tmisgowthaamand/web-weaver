@@ -1,9 +1,8 @@
-import { createFileRoute } from "@tanstack/react-router";
+
 import { PolicyPage } from "@/components/PolicyPage";
 
-export const Route = createFileRoute("/shipping-policy")({
-  head: () => ({ meta: [{ title: "Shipping Policy — Parveen Packaging" }, { name: "description", content: "Parveen Packaging shipping policy." }] }),
-  component: () => (
+export default function ShippingPolicy() {
+  return (
     <PolicyPage title="Shipping Policy">
       <p>At Parveen Packaging Industries, we are committed to delivering your packaging products safely and on time. This policy outlines our shipping procedures, timelines, and charges.</p>
       
@@ -53,5 +52,6 @@ export const Route = createFileRoute("/shipping-policy")({
         <li>Business Hours: Monday to Saturday, 9:00 AM - 7:00 PM</li>
       </ul>
     </PolicyPage>
-  ),
-});
+  );
+}
+

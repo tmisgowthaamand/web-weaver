@@ -1,9 +1,8 @@
-import { createFileRoute } from "@tanstack/react-router";
+
 import { PolicyPage } from "@/components/PolicyPage";
 
-export const Route = createFileRoute("/terms-conditions")({
-  head: () => ({ meta: [{ title: "Terms & Conditions — Parveen Packaging" }, { name: "description", content: "Terms governing use of Parveen Packaging." }] }),
-  component: () => (
+export default function TermsConditions() {
+  return (
     <PolicyPage title="Terms & Conditions">
       <p>Welcome to Parveen Packaging Industries. By accessing and using our website or purchasing our products, you agree to be bound by these Terms and Conditions. Please read them carefully before using our services.</p>
       <p><strong>Last Updated:</strong> January 2026</p>
@@ -178,5 +177,6 @@ export const Route = createFileRoute("/terms-conditions")({
       
       <p className="mt-8 text-sm text-muted-foreground">By using our website and services, you acknowledge that you have read, understood, and agree to be bound by these Terms and Conditions.</p>
     </PolicyPage>
-  ),
-});
+  );
+}
+

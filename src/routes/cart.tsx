@@ -1,19 +1,11 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { Link } from "react-router-dom";
 import { SiteLayout } from "@/components/SiteLayout";
 import { useCart } from "@/contexts/CartContext";
 import { Minus, Plus, Trash2, ShoppingBag, ArrowRight } from "lucide-react";
 
-export const Route = createFileRoute("/cart")({
-  head: () => ({
-    meta: [
-      { title: "Shopping Cart — Parveen Packaging Industries" },
-      { name: "description", content: "Review your cart and proceed to checkout" },
-    ],
-  }),
-  component: Cart,
-});
 
-function Cart() {
+
+export default function Cart() {
   const { cart, updateQuantity, removeFromCart, clearCart, getTotalPrice } = useCart();
 
   if (cart.length === 0) {

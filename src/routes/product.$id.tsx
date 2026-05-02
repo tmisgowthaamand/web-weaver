@@ -1,16 +1,12 @@
-import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
+import { Link, useParams, useNavigate } from "react-router-dom";
 import { SiteLayout } from "@/components/SiteLayout";
 import products from "@/data/enhanced-products.json";
 import { useState } from "react";
 import { Star, ShoppingCart, Check, Minus, Plus, ArrowLeft, Package, Shield, Truck } from "lucide-react";
 import { useCart } from "@/contexts/CartContext";
 
-export const Route = createFileRoute("/product/$id")({
-  component: ProductDetail,
-});
-
-function ProductDetail() {
-  const { id } = Route.useParams();
+export default function ProductDetail() {
+  const { id } = useParams();
   const navigate = useNavigate();
   const { addToCart } = useCart();
   const [quantity, setQuantity] = useState(1);
@@ -50,7 +46,7 @@ function ProductDetail() {
     <SiteLayout>
       <div className="mx-auto max-w-7xl px-4 py-8">
         <button
-          onClick={() => navigate({ to: "/products" })}
+          onClick={() => navigate("/products")}
           className="inline-flex items-center gap-2 text-primary hover:underline mb-6"
         >
           <ArrowLeft className="h-4 w-4" /> Back to Products

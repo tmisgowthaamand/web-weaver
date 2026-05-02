@@ -1,21 +1,11 @@
-import { createFileRoute } from "@tanstack/react-router";
+
 import { SiteLayout } from "@/components/SiteLayout";
 import { useState } from "react";
 import { Send, CheckCircle2, Clock, MessageSquare, Phone, Mail } from "lucide-react";
 
-export const Route = createFileRoute("/enquiry")({
-  head: () => ({
-    meta: [
-      { title: "Bulk Enquiry — Parveen Packaging Industries" },
-      { name: "description", content: "Request a custom quote for bulk packaging orders." },
-      { property: "og:title", content: "Bulk Enquiry — Parveen Packaging Industries" },
-      { property: "og:description", content: "Request a custom quote for bulk packaging orders." },
-    ],
-  }),
-  component: Enquiry,
-});
 
-function Enquiry() {
+
+export default function Enquiry() {
   const [sent, setSent] = useState(false);
   return (
     <SiteLayout>

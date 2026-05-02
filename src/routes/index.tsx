@@ -1,21 +1,9 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { Link } from "react-router-dom";
 import { SiteLayout } from "@/components/SiteLayout";
 import products from "@/data/products.json";
 import { ArrowRight, Truck, Shield, Recycle, Star, Package, Award, Users, TrendingUp, CheckCircle, Sparkles } from "lucide-react";
 
-export const Route = createFileRoute("/")({
-  head: () => ({
-    meta: [
-      { title: "Parveen Packaging — Premium Shipping & Packaging Boxes" },
-      { name: "description", content: "Durable corrugated shipping boxes, mailers and gift packaging for businesses." },
-      { property: "og:title", content: "Parveen Packaging — Premium Shipping & Packaging Boxes" },
-      { property: "og:description", content: "Durable corrugated shipping boxes, mailers and gift packaging for businesses." },
-    ],
-  }),
-  component: Index,
-});
-
-function Index() {
+export default function Index() {
   const featured = products.slice(0, 6);
   return (
     <SiteLayout>

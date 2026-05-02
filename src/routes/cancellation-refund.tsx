@@ -1,9 +1,8 @@
-import { createFileRoute } from "@tanstack/react-router";
+
 import { PolicyPage } from "@/components/PolicyPage";
 
-export const Route = createFileRoute("/cancellation-refund")({
-  head: () => ({ meta: [{ title: "Cancellation & Refund — Parveen Packaging" }, { name: "description", content: "Cancellation and refund policy." }] }),
-  component: () => (
+export default function CancellationRefund() {
+  return (
     <PolicyPage title="Cancellation & Refund Policy">
       <p>At Parveen Packaging Industries, customer satisfaction is our priority. We understand that sometimes you may need to cancel an order or request a refund. This policy outlines the terms and conditions for cancellations and refunds.</p>
       
@@ -85,5 +84,5 @@ export const Route = createFileRoute("/cancellation-refund")({
         <li>Business Hours: Monday to Saturday, 9:00 AM - 7:00 PM</li>
       </ul>
     </PolicyPage>
-  ),
-});
+  );
+}

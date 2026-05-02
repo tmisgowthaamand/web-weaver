@@ -1,20 +1,10 @@
-import { createFileRoute } from "@tanstack/react-router";
+
 import { SiteLayout } from "@/components/SiteLayout";
 import { Award, Users, Globe2, Leaf, Target, Heart, TrendingUp, CheckCircle, Calendar, Factory } from "lucide-react";
 
-export const Route = createFileRoute("/about")({
-  head: () => ({
-    meta: [
-      { title: "About — Parveen Packaging Industries" },
-      { name: "description", content: "Learn about Parveen Packaging's mission to make protective, sustainable packaging accessible." },
-      { property: "og:title", content: "About — Parveen Packaging Industries" },
-      { property: "og:description", content: "Learn about Parveen Packaging's mission to make protective, sustainable packaging accessible." },
-    ],
-  }),
-  component: About,
-});
 
-function About() {
+
+export default function About() {
   return (
     <SiteLayout>
       {/* Hero Section */}

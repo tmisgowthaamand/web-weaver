@@ -1,9 +1,8 @@
-import { createFileRoute } from "@tanstack/react-router";
+
 import { PolicyPage } from "@/components/PolicyPage";
 
-export const Route = createFileRoute("/privacy-policy")({
-  head: () => ({ meta: [{ title: "Privacy Policy — Parveen Packaging" }, { name: "description", content: "How Parveen Packaging handles your data." }] }),
-  component: () => (
+export default function PrivacyPolicy() {
+  return (
     <PolicyPage title="Privacy Policy">
       <p>At Parveen Packaging Industries, we are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy explains how we collect, use, store, and protect your data when you use our website or services.</p>
       <p><strong>Last Updated:</strong> January 2026</p>
@@ -108,5 +107,6 @@ export const Route = createFileRoute("/privacy-policy")({
         <li><strong>Business Hours:</strong> Monday to Saturday, 9:00 AM - 7:00 PM</li>
       </ul>
     </PolicyPage>
-  ),
-});
+  );
+}
+

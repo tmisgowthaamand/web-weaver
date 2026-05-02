@@ -1,32 +1,18 @@
-import { createFileRoute, useNavigate } from "@tanstack/react-router";
+import { useNavigate, useSearchParams } from "react-router-dom";
 import { SiteLayout } from "@/components/SiteLayout";
 import { CheckCircle2, Package, Mail, Phone, Home } from "lucide-react";
 import { useEffect } from "react";
 
-export const Route = createFileRoute("/order-success")({
-  head: () => ({
-    meta: [
-      { title: "Order Successful — Parveen Packaging Industries" },
-      { name: "description", content: "Your order has been placed successfully" },
-    ],
-  }),
-  validateSearch: (search: Record<string, unknown>) => {
-    return {
-      orderId: (search.orderId as string) || "",
-      amount: (search.amount as number) || 0,
-    };
-  },
-  component: OrderSuccess,
-});
-
-function OrderSuccess() {
+export default function OrderSuccess() {
   const navigate = useNavigate();
-  const { orderId, amount } = Route.useSearch();
+  const [searchParams] = useSearchParams();
+  const orderId = searchParams.get('orderId') || '';
+  const amount = Number(searchParams.get('amount')) || 0;
 
   useEffect(() => {
     // Redirect to home if no order data
     if (!orderId || !amount) {
-      navigate({ to: "/" });
+      navigate("/");
     }
   }, [orderId, amount, navigate]);
 
@@ -118,14 +104,14 @@ function OrderSuccess() {
         {/* Action Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <button
-            onClick={() => navigate({ to: "/" })}
+            onClick={() => navigate("/")}
             className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-primary text-primary-foreground font-bold hover:shadow-xl hover:scale-105 transition-all"
           >
             <Home className="h-5 w-5" />
             Back to Home
           </button>
           <button
-            onClick={() => navigate({ to: "/products" })}
+            onClick={() => navigate("/products")}
             className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl border-2 border-border font-bold hover:bg-secondary transition-all"
           >
             Continue Shopping

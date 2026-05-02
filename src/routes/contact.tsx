@@ -1,20 +1,10 @@
-import { createFileRoute } from "@tanstack/react-router";
+
 import { SiteLayout } from "@/components/SiteLayout";
 import { Mail, Phone, MapPin, Clock, MessageCircle, User, Building2, Navigation } from "lucide-react";
 
-export const Route = createFileRoute("/contact")({
-  head: () => ({
-    meta: [
-      { title: "Contact — Parveen Packaging Industries" },
-      { name: "description", content: "Get in touch with the Parveen Packaging team for orders, support or partnerships." },
-      { property: "og:title", content: "Contact — Parveen Packaging Industries" },
-      { property: "og:description", content: "Get in touch with the Parveen Packaging team for orders, support or partnerships." },
-    ],
-  }),
-  component: Contact,
-});
 
-function Contact() {
+
+export default function Contact() {
   const items = [
     { icon: MapPin, title: "Visit Our Workshop", lines: ["857/1121, B V Colony 25th Street", "Vyasarpadi, Chennai", "Tamil Nadu 600039"], color: "text-blue-600" },
     { icon: Phone, title: "Call Us", lines: ["+91 98765 43210", "+91 98765 43211", "Mon–Sat, 9am – 7pm"], color: "text-green-600" },

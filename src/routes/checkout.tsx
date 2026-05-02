@@ -1,22 +1,14 @@
-import { createFileRoute, useNavigate } from "@tanstack/react-router";
+import { useNavigate } from "react-router-dom";
 import { SiteLayout } from "@/components/SiteLayout";
 import { useCart } from "@/contexts/CartContext";
 import { useState, useEffect } from "react";
 import { CreditCard, Smartphone, Banknote, Building2, Check } from "lucide-react";
 
-export const Route = createFileRoute("/checkout")({
-  head: () => ({
-    meta: [
-      { title: "Checkout — Parveen Packaging Industries" },
-      { name: "description", content: "Complete your order" },
-    ],
-  }),
-  component: Checkout,
-});
+
 
 type PaymentMethod = "credit" | "debit" | "upi" | "cod";
 
-function Checkout() {
+export default function Checkout() {
   const { cart, getTotalPrice, clearCart } = useCart();
   const navigate = useNavigate();
   const [paymentMethod, setPaymentMethod] = useState<PaymentMethod>("upi");
@@ -39,7 +31,7 @@ function Checkout() {
   // Redirect to cart if empty - but not when placing order
   useEffect(() => {
     if (cart.length === 0 && !isPlacingOrder) {
-      navigate({ to: "/cart" });
+      navigate("/cart");
     }
   }, [cart.length, navigate, isPlacingOrder]);
 
@@ -62,7 +54,7 @@ function Checkout() {
     // Navigate to success page
     setTimeout(() => {
       clearCart();
-      navigate({ to: "/order-success", search: { orderId, amount: finalTotal } });
+      navigate(`/order-success?orderId=${orderId}&amount=${finalTotal}`);
     }, 500);
   };
 

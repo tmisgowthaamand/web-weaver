@@ -1,23 +1,13 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { Link } from "react-router-dom";
 import { SiteLayout } from "@/components/SiteLayout";
 import products from "@/data/enhanced-products.json";
 import { Star, Search, Package, Filter, ShoppingCart } from "lucide-react";
 import { useState } from "react";
 import { useCart } from "@/contexts/CartContext";
 
-export const Route = createFileRoute("/products")({
-  head: () => ({
-    meta: [
-      { title: "Products — Parveen Packaging Industries" },
-      { name: "description", content: "Browse our catalog of shipping boxes, mailers and gift packaging." },
-      { property: "og:title", content: "Products — Parveen Packaging Industries" },
-      { property: "og:description", content: "Browse our catalog of shipping boxes, mailers and gift packaging." },
-    ],
-  }),
-  component: Products,
-});
 
-function Products() {
+
+export default function Products() {
   const [q, setQ] = useState("");
   const [category, setCategory] = useState("All");
   const { addToCart } = useCart();
