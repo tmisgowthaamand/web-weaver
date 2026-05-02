@@ -23,13 +23,13 @@ function Index() {
       <section className="relative overflow-hidden" style={{ background: "var(--gradient-hero)" }}>
         <div className="mx-auto max-w-6xl px-4 py-24 md:py-32 text-primary-foreground">
           <span className="inline-block px-3 py-1 rounded-full bg-white/15 backdrop-blur text-xs font-medium mb-5">
-            Trusted by 5,000+ businesses
+            Serving Chennai businesses since 2017
           </span>
           <h1 className="text-4xl md:text-6xl font-bold leading-tight max-w-3xl">
             Packaging that protects, performs & delights.
           </h1>
           <p className="mt-5 max-w-xl text-lg text-primary-foreground/90">
-            From corrugated mailers to custom gift boxes — premium packaging for small businesses and enterprise alike.
+            From corrugated mailers to custom gift boxes — quality packaging from a family-run workshop in Vyasarpadi, Chennai.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <Link to="/products" className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-background text-primary font-semibold hover:opacity-90 transition">
@@ -45,9 +45,9 @@ function Index() {
       {/* Features */}
       <section className="mx-auto max-w-6xl px-4 py-16 grid gap-6 md:grid-cols-3">
         {[
-          { icon: Truck, title: "Fast dispatch", desc: "Pan-India delivery in 3–5 business days." },
-          { icon: Shield, title: "Built to last", desc: "Heavy-duty corrugated, tested for transit." },
-          { icon: Recycle, title: "Eco-friendly", desc: "100% recyclable kraft & FSC-certified stock." },
+          { icon: Truck, title: "Fast dispatch", desc: "Same-day pickup in Chennai, 2–4 days across Tamil Nadu." },
+          { icon: Shield, title: "Built to last", desc: "Heavy-duty corrugated, tested for daily transit." },
+          { icon: Recycle, title: "Eco-friendly", desc: "100% recyclable kraft & responsibly sourced board." },
         ].map((f) => (
           <div key={f.title} className="p-6 rounded-xl bg-card border border-border" style={{ boxShadow: "var(--shadow-card)" }}>
             <f.icon className="h-8 w-8 text-primary mb-3" />
