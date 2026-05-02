@@ -12,7 +12,7 @@ const policies = [
 export function SiteFooter() {
   return (
     <footer className="mt-20 border-t border-border bg-secondary/40">
-      <div className="mx-auto max-w-6xl px-4 py-12 grid gap-10 md:grid-cols-4">
+      <div className="mx-auto max-w-6xl px-4 py-12 grid gap-10 md:grid-cols-3">
         <div>
           <Link to="/" className="flex items-center gap-2 font-bold text-lg text-primary">
             <Package className="h-6 w-6" />
@@ -37,19 +37,6 @@ export function SiteFooter() {
         </div>
 
         <div>
-          <h4 className="font-semibold text-foreground mb-3">Policies</h4>
-          <ul className="space-y-2 text-sm">
-            {policies.map((p) => (
-              <li key={p.to}>
-                <Link to={p.to} className="text-muted-foreground hover:text-primary transition-colors">
-                  {p.label}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </div>
-
-        <div>
           <h4 className="font-semibold text-foreground mb-3">Contact</h4>
           <ul className="space-y-2 text-sm text-muted-foreground">
             <li className="flex items-start gap-2"><MapPin className="h-4 w-4 mt-0.5 text-primary" /> 12 Industrial Park, Mumbai</li>
@@ -59,8 +46,17 @@ export function SiteFooter() {
         </div>
       </div>
       <div className="border-t border-border">
-        <div className="mx-auto max-w-6xl px-4 py-4 text-center text-xs text-muted-foreground">
-          © {new Date().getFullYear()} BoxCraft Packaging. All rights reserved.
+        <div className="mx-auto max-w-6xl px-4 py-4 flex flex-col md:flex-row items-center justify-between gap-3 text-xs text-muted-foreground">
+          <p className="text-center md:text-left">
+            © {new Date().getFullYear()} BoxCraft Packaging. All rights reserved.
+          </p>
+          <nav className="flex flex-wrap items-center justify-center gap-x-5 gap-y-2">
+            {policies.map((p) => (
+              <Link key={p.to} to={p.to} className="hover:text-primary transition-colors">
+                {p.label}
+              </Link>
+            ))}
+          </nav>
         </div>
       </div>
     </footer>
