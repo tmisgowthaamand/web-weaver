@@ -17,7 +17,7 @@ export function SiteHeader() {
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4">
         <Link to="/" className="flex items-center gap-2 font-bold text-lg text-primary">
           <Package className="h-6 w-6" />
-          <span>BoxCraft</span>
+          <span>Parveen Packaging</span>
         </Link>
         <nav className="hidden md:flex items-center gap-1">
           {navLinks.map((l) => (

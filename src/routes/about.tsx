@@ -5,10 +5,10 @@ import { Award, Users, Globe2, Leaf } from "lucide-react";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About — BoxCraft Packaging" },
-      { name: "description", content: "Learn about BoxCraft's mission to make protective, sustainable packaging accessible." },
-      { property: "og:title", content: "About — BoxCraft Packaging" },
-      { property: "og:description", content: "Learn about BoxCraft's mission to make protective, sustainable packaging accessible." },
+      { title: "About — Parveen Packaging Industries" },
+      { name: "description", content: "Learn about Parveen Packaging's mission to make protective, sustainable packaging accessible." },
+      { property: "og:title", content: "About — Parveen Packaging Industries" },
+      { property: "og:description", content: "Learn about Parveen Packaging's mission to make protective, sustainable packaging accessible." },
     ],
   }),
   component: About,
@@ -30,7 +30,7 @@ function About() {
         <div>
           <h2 className="text-2xl font-bold mb-3">Our story</h2>
           <p className="text-muted-foreground leading-relaxed">
-            BoxCraft started in a small Mumbai workshop with a simple goal: make great packaging easy to buy.
+            Parveen Packaging started in a small Mumbai workshop with a simple goal: make great packaging easy to buy.
             A decade later, we serve thousands of small businesses, e-commerce sellers and enterprises across India and beyond.
           </p>
           <p className="text-muted-foreground leading-relaxed mt-3">

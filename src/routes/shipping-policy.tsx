@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { PolicyPage } from "@/components/PolicyPage";
 
 export const Route = createFileRoute("/shipping-policy")({
-  head: () => ({ meta: [{ title: "Shipping Policy — BoxCraft" }, { name: "description", content: "BoxCraft shipping policy." }] }),
+  head: () => ({ meta: [{ title: "Shipping Policy — Parveen Packaging" }, { name: "description", content: "Parveen Packaging shipping policy." }] }),
   component: () => (
     <PolicyPage title="Shipping Policy">
       <p>We dispatch all orders within 1–2 business days from our Mumbai warehouse.</p>

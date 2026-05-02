@@ -5,10 +5,10 @@ import { Mail, Phone, MapPin, Clock } from "lucide-react";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact — BoxCraft Packaging" },
-      { name: "description", content: "Get in touch with the BoxCraft team for orders, support or partnerships." },
-      { property: "og:title", content: "Contact — BoxCraft Packaging" },
-      { property: "og:description", content: "Get in touch with the BoxCraft team for orders, support or partnerships." },
+      { title: "Contact — Parveen Packaging Industries" },
+      { name: "description", content: "Get in touch with the Parveen Packaging team for orders, support or partnerships." },
+      { property: "og:title", content: "Contact — Parveen Packaging Industries" },
+      { property: "og:description", content: "Get in touch with the Parveen Packaging team for orders, support or partnerships." },
     ],
   }),
   component: Contact,
@@ -18,7 +18,7 @@ function Contact() {
   const items = [
     { icon: MapPin, title: "Visit", lines: ["12 Industrial Park", "Andheri East, Mumbai 400072"] },
     { icon: Phone, title: "Call", lines: ["+91 98765 43210", "Mon–Sat, 9am – 7pm"] },
-    { icon: Mail, title: "Email", lines: ["hello@boxcraft.in", "support@boxcraft.in"] },
+    { icon: Mail, title: "Email", lines: ["hello@parveenpackaging.in", "support@parveenpackaging.in"] },
     { icon: Clock, title: "Hours", lines: ["Mon–Fri: 9am – 7pm", "Sat: 10am – 4pm"] },
   ];
   return (

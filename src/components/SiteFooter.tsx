@@ -16,7 +16,7 @@ export function SiteFooter() {
         <div>
           <Link to="/" className="flex items-center gap-2 font-bold text-lg text-primary">
             <Package className="h-6 w-6" />
-            <span>BoxCraft</span>
+            <span>Parveen Packaging</span>
           </Link>
           <p className="mt-3 text-sm text-muted-foreground">
             Premium corrugated shipping boxes & packaging solutions for businesses of every size.
@@ -41,14 +41,14 @@ export function SiteFooter() {
           <ul className="space-y-2 text-sm text-muted-foreground">
             <li className="flex items-start gap-2"><MapPin className="h-4 w-4 mt-0.5 text-primary" /> 12 Industrial Park, Mumbai</li>
             <li className="flex items-center gap-2"><Phone className="h-4 w-4 text-primary" /> +91 98765 43210</li>
-            <li className="flex items-center gap-2"><Mail className="h-4 w-4 text-primary" /> hello@boxcraft.in</li>
+            <li className="flex items-center gap-2"><Mail className="h-4 w-4 text-primary" /> hello@parveenpackaging.in</li>
           </ul>
         </div>
       </div>
       <div className="border-t border-border">
         <div className="mx-auto max-w-6xl px-4 py-4 flex flex-col md:flex-row items-center justify-between gap-3 text-xs text-muted-foreground">
           <p className="text-center md:text-left">
-            © {new Date().getFullYear()} BoxCraft Packaging. All rights reserved.
+            © {new Date().getFullYear()} Parveen Packaging Industries. All rights reserved.
           </p>
           <nav className="flex flex-wrap items-center justify-center gap-x-5 gap-y-2">
             {policies.map((p) => (
