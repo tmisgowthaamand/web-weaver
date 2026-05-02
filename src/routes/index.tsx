@@ -5,6 +5,8 @@ import { ArrowRight, Truck, Shield, Recycle, Star, Package, Award, Users, Trendi
 
 export default function Index() {
   const featured = products.slice(0, 6);
+  const totalProducts = products.length;
+  
   return (
     <SiteLayout>
       {/* Hero */}
@@ -14,7 +16,7 @@ export default function Index() {
           <div className="max-w-4xl">
             <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/20 backdrop-blur-sm text-sm font-medium mb-6 border border-white/20">
               <Sparkles className="h-4 w-4" />
-              Proudly serving Chennai businesses since 2017 — 9 years of excellence
+              {totalProducts} Premium Products Available — Serving Chennai since 2017
             </span>
             <h1 className="text-5xl md:text-7xl font-bold leading-tight tracking-tight">
               Packaging that protects, performs & delights.

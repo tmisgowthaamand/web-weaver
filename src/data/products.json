@@ -1,680 +1,236 @@
 [
   {
-    "title": "Corrugated Shipping Boxes 12x9x4Inches, 30Pack Kraft Cardboard Literature Mailers, Durable Small Business Mailing Boxes for Packaging & Shipping Supplies, Brown,Shipping boxes made from recycled paper",
+    "id": "prod-1",
+    "title": "Corrugated Shipping Boxes 12x9x4 Inches - 30 Pack",
+    "description": "Premium corrugated shipping boxes measuring 12\"×9\"×4\". Sold in 30-pack. Perfect for e-commerce businesses, online sellers, and product shipping. Durable 3-ply construction ensures safe transit. Made from recycled kraft paper.",
+    "price": 25,
+    "originalPrice": 35,
     "image": "https://m.media-amazon.com/images/I/61yBo5+BUFL._AC_UL320_.jpg",
-    "rating": "4.8",
-    "reviews": "(10)"
+    "category": "Shipping Boxes",
+    "rating": 4.8,
+    "reviews": "10",
+    "inStock": true,
+    "stock": 150
   },
   {
-    "title": "11 x 8 x 4 inch Shipping Boxes Set of 20\uff0c White Corrugated Cardboard Box Mailer Boxes for Packaging Small Business Shipping\uff0cMailing Boxes Bulk for Birthday Wedding Party Book Literature Gift Giving",
+    "id": "prod-2",
+    "title": "White Shipping Boxes 11x8x4 Inch - Set of 20",
+    "description": "Premium white corrugated cardboard mailer boxes measuring 11\"×8\"×4\". Available in 20-pack. Ideal for small business shipping, birthday gifts, wedding favors, and book literature packaging. Clean white finish for professional presentation.",
+    "price": 18,
+    "originalPrice": 25,
     "image": "https://m.media-amazon.com/images/I/61Kk1cHPrbL._AC_UL320_.jpg",
-    "rating": "4.8",
-    "reviews": "(212)"
+    "category": "Shipping Boxes",
+    "rating": 4.8,
+    "reviews": "212",
+    "inStock": true,
+    "stock": 200
   },
   {
-    "title": "9x6x4 inches Shipping Boxes Set of 25, Small Corrugated Cardboard Box, Literature Mailer, Gift Boxes (White, 9x6x4)",
+    "id": "prod-3",
+    "title": "Small Shipping Boxes 9x6x4 Inches - 25 Pack White",
+    "description": "Compact corrugated cardboard boxes sized 9\"×6\"×4\". Sold in 25-pack. Perfect for small items, literature mailers, and gift packaging. Lightweight yet durable construction. Easy assembly design.",
+    "price": 20,
+    "originalPrice": 28,
     "image": "https://m.media-amazon.com/images/I/61j8Rl2RkwL._AC_UL320_.jpg",
-    "rating": "4.4",
-    "reviews": "(68)"
+    "category": "Small Boxes",
+    "rating": 4.4,
+    "reviews": "68",
+    "inStock": true,
+    "stock": 180
   },
   {
-    "title": "13x9x4 Black Shipping Boxes Set of 20, Corrugated Cardboard Mailers for Product Packaging & Mailing, Recyclable Small Business Shipping Supplies, Gift Boxes for Holiday Birthday Wedding Favors",
+    "id": "prod-4",
+    "title": "Black Shipping Boxes 13x9x4 - Set of 20",
+    "description": "Premium black corrugated mailers measuring 13\"×9\"×4\". Available in 20-pack. Perfect for product packaging, holiday gifts, birthday presents, and wedding favors. Recyclable and eco-friendly material. Sleek black finish.",
+    "price": 22,
+    "originalPrice": 30,
     "image": "https://m.media-amazon.com/images/I/61Ec+PdWX7L._AC_UL320_.jpg",
-    "rating": "4.5",
-    "reviews": "(26)"
+    "category": "Specialty Boxes",
+    "rating": 4.5,
+    "reviews": "26",
+    "inStock": true,
+    "stock": 120
   },
   {
-    "title": "Gift Box 13.5''x10''x4'' Large Gifts Box with Magnetic Lids Black Gift Boxes for Mom Gifts Contains Card, Ribbon, Filler Mother's Day",
+    "id": "prod-5",
+    "title": "Large Gift Box with Magnetic Lid 13.5x10x4 Inches - Black",
+    "description": "Elegant gift box sized 13.5\"×10\"×4\" ideal for special occasions. Features magnetic closure for premium presentation. Includes card, ribbon, and filler. Perfect for weddings, birthdays, Mother's Day, and corporate gifts.",
+    "price": 11,
+    "originalPrice": 16,
     "image": "https://m.media-amazon.com/images/I/61JM5YIzNKL._AC_UL320_.jpg",
-    "rating": "4.6",
-    "reviews": "(3.5K)"
+    "category": "Gift Boxes",
+    "rating": 4.6,
+    "reviews": "3.5K",
+    "inStock": true,
+    "stock": 250
   },
   {
-    "title": "Black Gift Box, 9.5x6x3'' Gift boxes for Presents with Lids Magnetic Closure Rectangle Collapsible for Groomsman Proposal Box, Wedding, Christmas, Halloween, Birthday Gift Packging",
+    "id": "prod-6",
+    "title": "Black Gift Box 9.5x6x3 Inches with Magnetic Closure",
+    "description": "Elegant gift boxes sized 9.5\"×6\"×3\" ideal for special occasions. Features magnetic closure for premium presentation. Collapsible design for easy storage. Perfect for groomsman proposals, weddings, Christmas, Halloween, and birthday gifts.",
+    "price": 7,
+    "originalPrice": 10,
     "image": "https://m.media-amazon.com/images/I/51a10uveGjL._AC_UL320_.jpg",
-    "rating": "Best Seller",
-    "reviews": "(4.5K)"
+    "category": "Gift Boxes",
+    "rating": 4.6,
+    "reviews": "4.5K",
+    "inStock": true,
+    "stock": 300
   },
   {
-    "title": "Amazon's Choice: Overall Pick",
+    "id": "prod-7",
+    "title": "Corrugated Shipping Boxes 10x8x6 Inches - 25 Pack",
+    "description": "Heavy-duty corrugated shipping boxes measuring 10\"×8\"×6\". Sold in 25-pack. Perfect for e-commerce businesses and product shipping. 5-ply construction for extra strength. Recyclable kraft material.",
+    "price": 28,
+    "originalPrice": 38,
     "image": "https://m.media-amazon.com/images/I/61+JVNu3yDL._AC_UL320_.jpg",
-    "rating": "4.7",
-    "reviews": "(4.4K)"
+    "category": "Shipping Boxes",
+    "rating": 4.7,
+    "reviews": "4.4K",
+    "inStock": true,
+    "stock": 175
   },
   {
-    "title": "10 Pack Small Shipping Boxes 6x4x3'' Corrugated Small Cardboard Boxes for Shipping, Recyclable Packaging Boxes for Business, Mailer, Gift Packing, Crafts Packing, Jewelry Box, Brown",
+    "id": "prod-8",
+    "title": "Small Cardboard Boxes 6x4x3 Inches - 10 Pack Brown",
+    "description": "Compact corrugated boxes sized 6\"×4\"×3\". Available in 10-pack. Perfect for jewelry, crafts, small gifts, and business packaging. Recyclable brown kraft material. Space-efficient design.",
+    "price": 15,
+    "originalPrice": 20,
     "image": "https://m.media-amazon.com/images/I/71KaqqoBZIL._AC_UL320_.jpg",
-    "rating": "4.5",
-    "reviews": "(9)"
-  },
-  {
-    "title": "Brown Gift Boxes with Ribbon \u2013 4x4x4\" Foldable Paper Boxes with Lids, Set of 10, Eco-Friendly Small Kraft Present Boxes for Weddings, Holidays, Birthdays, Business Packaging",
-    "image": "https://m.media-amazon.com/images/I/61+wGkb2Z0L._AC_UL320_.jpg",
-    "rating": "4.7",
-    "reviews": "(814)"
-  },
-  {
-    "title": "Eupako Brown Gift Boxes 5x5x3.5 25 Pack Kraft Paper Gift Boxes with Lids for Gifts, Crafting, Wedding, Birthday, Party, Cupcake",
-    "image": "https://m.media-amazon.com/images/I/71C-7lrGGKL._AC_UL320_.jpg",
-    "rating": "4.6",
-    "reviews": "(3.7K)"
-  },
-  {
-    "title": "12x9x2 Black Shipping Boxes Set of 24, Corrugated Cardboard Mailers for Product Packaging & Mailing, Recyclable Small Business Shipping Supplies, Gift Boxes for Holiday Birthday Wedding Favors",
-    "image": "https://m.media-amazon.com/images/I/618JneunwuL._AC_UL320_.jpg",
-    "rating": "4.5",
-    "reviews": "(26)"
-  },
-  {
-    "title": "12x9x4 Black Shipping Boxes Set of 20, Corrugated Cardboard Mailers for Product Packaging & Mailing, Recyclable Small Business Shipping Supplies, Gift Boxes for Holiday Birthday Wedding Favors",
-    "image": "https://m.media-amazon.com/images/I/61p4woK0l7L._AC_UL320_.jpg",
-    "rating": "4.5",
-    "reviews": "(26)"
-  },
-  {
-    "title": "7x5x4 Inches Shipping Boxes Set - (20 Pack) Purple Corrugated Cardboard Mailer Boxes for Packing Small Business Mailing Gift",
-    "image": "https://m.media-amazon.com/images/I/51WoIPCoDfL._AC_UL320_.jpg",
-    "rating": "4.6",
-    "reviews": "(13)"
-  },
-  {
-    "title": "10x7x3 inch Shipping Boxes Set of 25\uff0cWhite Corrugated Cardboard Box for Mailing Literature Mailer Small Business Shipping Packing Gifts Digest Size Book Giving Products (10 x7 x 3 Inches)",
-    "image": "https://m.media-amazon.com/images/I/51wq2WSeWwL._AC_UL320_.jpg",
-    "rating": "4.8",
-    "reviews": "(213)"
-  },
-  {
-    "title": "Aimyoo Brown Gift Box, 13.8x9x4.3 in Presents Box with Lids Magnetic Closure Rectangle Collapsible for Groomsman Proposal Box, Wedding, Birthday Gift Packging 1 Pack",
-    "image": "https://m.media-amazon.com/images/I/61K80Lx-XkL._AC_UL320_.jpg",
-    "rating": "4.0",
-    "reviews": "(2)"
-  },
-  {
-    "title": "Cardboard Shoe Boxes with Lid, 12.6x8.66x4.7, Multi-Purpose Storage Box for Home Office Organization Containers, Foldable Cardboard Carton, Gift Parcel (Pack of 10)",
-    "image": "https://m.media-amazon.com/images/I/71foxOnlYtL._AC_UL320_.jpg",
-    "rating": "4.2",
-    "reviews": "(111)"
-  },
-  {
-    "title": "10 PCS Boxes with Lids, 10.6x7.8x3.1 Inch Kraft Paper, Black Gift Boxes with Ribbon, Bridesmaid Proposal Box for Wedding, Packaging, Present, Birthday, Cupcake Boxes",
-    "image": "https://m.media-amazon.com/images/I/61UMI5h3JnL._AC_UL320_.jpg",
-    "rating": "4.6",
-    "reviews": "(1K)"
-  },
-  {
-    "title": "Gift Box with Lid for Presents 10.5x7.5x3.1 Inches with Ribbon and Magnetic Closure(1-Pack) (Black)",
-    "image": "https://m.media-amazon.com/images/I/51CZ+3z-RoL._AC_UL320_.jpg",
-    "rating": "4.7",
-    "reviews": "(2.9K)"
-  },
-  {
-    "title": "Shipping Boxes 8x7x2 inch 25 Pack,Brown Corrugated Boxes Mailer Packaging for Mailing Small Business\uff0cE-Commerce Gift Boxes for Wrapping Present Moving Storage Heavy Duty Recycled Cardboard Boxes",
-    "image": "https://m.media-amazon.com/images/I/712px34k1VL._AC_UL320_.jpg",
-    "rating": "4.6",
-    "reviews": "(127)"
-  },
-  {
-    "title": "9x7x4 inch Shipping Boxes Pack of 25, Brown Corrugated Cardboard Box Mailer Boxes for Packaging Small Business Shipping\uff0cRecyclable Moving Storage Mailing Boxes Bulk Book Literature Gift Giving",
-    "image": "https://m.media-amazon.com/images/I/61Dq2wks1uL._AC_UL320_.jpg",
-    "rating": "4.7",
-    "reviews": "(118)"
-  },
-  {
-    "title": "Frantis Brown Gift Boxes 9.45x6.5x4 Inches 10 Pack\uff0c Paper Gift Box with Lids for Bridesmaid Gifts, Birthday, Party, Christmas\uff0cWedding, Crafting Cupcake Boxes, With 66 FT Twine",
-    "image": "https://m.media-amazon.com/images/I/61plxJrpi9L._AC_UL320_.jpg",
-    "rating": "4.5",
-    "reviews": "(573)"
-  },
-  {
-    "title": "12x9x4 inches Shipping Boxes Set of 1, White Corrugated Cardboard Mailer Box for Packing, Mailing, Small Business",
-    "image": "https://m.media-amazon.com/images/I/51FlZ2TjjML._AC_UL320_.jpg",
-    "rating": "4.6",
-    "reviews": "(1.8K)"
-  },
-  {
-    "title": "Gift Boxes 9x4.5x4.5 Inches 12 Pack Brown Recycled Paper Boxes Kraft Favor Boxes for Party, Wedding, Thanksgiving, Crafting, Bridesmaid Proposal, Easy Assemble Cardboard Boxes",
-    "image": "https://m.media-amazon.com/images/I/61ebWmvJVdL._AC_UL320_.jpg",
-    "rating": "4.4",
-    "reviews": "(1.3K)"
-  },
-  {
-    "title": "Bonfasvo Gift Boxes 30 Pack 4x4x4 inches Brown Fold Kraft Paper Boxes Bridesmaids Proposal Box Cupcake Boxes Easy Assemble Boxes with Lids for Wedding Birthday Party Christmas",
-    "image": "https://m.media-amazon.com/images/I/61q5b6Chx-L._AC_UL320_.jpg",
-    "rating": "4.7",
-    "reviews": "(376)"
-  },
-  {
-    "title": "Hallmark 8\" Gift Boxes (Pack of 5; Square Kraft) for Valentine's Day, Birthdays, Crafts and More",
-    "image": "https://m.media-amazon.com/images/I/71wEGPbI2mL._AC_UL320_.jpg",
-    "rating": "4.6",
-    "reviews": "(3.7K)"
-  },
-  {
-    "title": "Parcel Drop Boxes for Outside, Extra Large Package Delivery Boxes with Secure Storage, Anti-Theft Galvanized Steel,Waterproof Package Delivery Box for Outdoor Porch with Password Lock (Black)",
-    "image": "https://m.media-amazon.com/images/I/714yh+J0e8L._AC_UL320_.jpg",
-    "rating": "4.2",
-    "reviews": "(14)"
-  },
-  {
-    "title": "BoxSkivra Black Gift Box with Ribbon 1 Pack 6X6X3 Inch Small Gift Box with Lid Magnetic Closure Rectangle Collapsible Luxury Gift Boxes Shredded Paper Filler & Card",
-    "image": "https://m.media-amazon.com/images/I/61AoSTsAn8L._AC_UL320_.jpg",
-    "rating": "4.6",
-    "reviews": "(544)"
-  },
-  {
-    "title": "Small Black Gift Box 8 x 7 x 3 inch, Sturdy Gift Box with lid Magnetic Closure for Gift Include Greeting Cards,Ribbon,Shredded Paper Filler for Presents (1 Pcs)",
-    "image": "https://m.media-amazon.com/images/I/71iXtfgmr1L._AC_UL320_.jpg",
-    "rating": "4.6",
-    "reviews": "(3.5K)"
-  },
-  {
-    "title": "White Gift Box 13.85 x 8.35 x 4.45 inch Gifts Box for Bridesmaid Proposal Gifts for Wedding with Card, Ribbon, Shredded Paper Filler Shirt Boxes for Presents (1 Pcs)",
-    "image": "https://m.media-amazon.com/images/I/51owBYBSLYL._AC_UL320_.jpg",
-    "rating": "4.6",
-    "reviews": "(3.5K)"
-  },
-  {
-    "title": "American Greetings White Robe Boxes with Lids, for Birthdays, Holidays, and All Occasions (5 Boxes, 17'' x 11'')",
-    "image": "https://m.media-amazon.com/images/I/61YWVjopT0L._AC_UL320_.jpg",
-    "rating": "4.6",
-    "reviews": "(3.6K)"
-  },
-  {
-    "title": "30 Pack 9x6x4 inches Black Shipping Boxes, Corrugated Mailer Boxes, Packaging Boxes for Products, Recyclable Cardboard Box, Flat Literature Mailers for Gifts, Clothings by Mailing",
-    "image": "https://m.media-amazon.com/images/I/61vxXe0sOIL._AC_UL320_.jpg",
-    "rating": "4.7",
-    "reviews": "(414)"
-  },
-  {
-    "title": "12x9x4 inches Shipping Boxes Set of 20, White Corrugated Cardboard Box Literature Mailer",
-    "image": "https://m.media-amazon.com/images/I/61KDi+4qD9L._AC_UL320_.jpg",
-    "rating": "4.7",
-    "reviews": "(5.2K)"
-  },
-  {
-    "title": "Hallmark Medium Gift Box with Lid and Shredded Paper Fill (Turquoise Blue 7 inch Box) for Birthdays, Graduations, Anniversaries, Baby Showers, All Occasion",
-    "image": "https://m.media-amazon.com/images/I/71mN3hUrt6L._AC_UL320_.jpg",
-    "rating": "4.4",
-    "reviews": "(7K)"
-  },
-  {
-    "title": "Cardboard Shoe Boxes with Lid, 11.81x7.08x3.94, Multi-Purpose Storage Box for Home Office Organization Containers, Foldable Cardboard Carton, Gift Parcel (Pack of 10)",
-    "image": "https://m.media-amazon.com/images/I/61wdCRIQP3L._AC_UL320_.jpg",
-    "rating": "4.3",
-    "reviews": "(73)"
-  },
-  {
-    "title": "9x6x2 Inches Small Shipping Boxes, 2 Pack White Corrugated Cardboard Boxes, Recyclable Tap-Lock Packaging Boxes for Business, Gift Wrapping, Mailing and Storage",
-    "image": "https://m.media-amazon.com/images/I/61baiZX70kL._AC_UL320_.jpg",
-    "rating": "3.5",
-    "reviews": "(2)"
-  },
-  {
-    "title": "MPFY- 10 Pack, 9 X 4.5 X 4.5 Inch, Assorted Color, Gift Boxes with Lids for Presents, Bridesmaid Boxes, Gift Box Set, Box Gift, Empty Gift Box, Decorative Gift Box",
-    "image": "https://m.media-amazon.com/images/I/81fcLsDY2qL._AC_UL320_.jpg",
-    "rating": "4.5",
-    "reviews": "(1K)"
-  },
-  {
-    "title": "5 Pack Brown Kraft Ribbed Hard Gift Box With Magnetic Closure Lid 8\"x8\"x4\" Square Favor Boxes With Classy Ribbed Paper Finish\u2026",
-    "image": "https://m.media-amazon.com/images/I/71fgy77SgeL._AC_UL320_.jpg",
-    "rating": "4.6",
-    "reviews": "(1.6K)"
-  },
-  {
-    "title": "Hallmark Medium Gift Box with Lid and Shredded Paper Fill (Black 7 inch Box) for Weddings, Graduations, Birthdays, Father's Day, Groomsmen Gifts, All Occasion",
-    "image": "https://m.media-amazon.com/images/I/A1pnUHWEKLL._AC_UL320_.jpg",
-    "rating": "4.7",
-    "reviews": "(17.5K)"
-  },
-  {
-    "title": "7\"x5\"x2\" Shipping Boxes Set of 3, White Corrugated Cardboard Box Literature Mailer",
-    "image": "https://m.media-amazon.com/images/I/61PUbTL+T5L._AC_UL320_.jpg",
-    "rating": "4.6",
-    "reviews": "(1.1K)"
-  },
-  {
-    "title": "YINUOYOUJIA Large Black Gift Boxes with Lid,14\"x9\"x4.5\" Magnetic Gift Box with Ribbon,Cards and Envelopes for Presents,Great for Wedding,Birthdays,Crafting,Gift Packaging.",
-    "image": "https://m.media-amazon.com/images/I/61SBvlEg6KL._AC_UL320_.jpg",
-    "rating": "4.6",
-    "reviews": "(826)"
-  },
-  {
-    "title": "Gift Box 12\" x 6\" x 4\" with Magnetic Closure Lid Gifts Boxe for Presents,Bridesmaid Gifts Boxes,Cute Box,Birthday Gift Boxe,Luxury for Gifts Packaging, Magnetic Gift Boxes for Wrapping Gifts (Rose Gold)",
-    "image": "https://m.media-amazon.com/images/I/51rWayGbCxL._AC_UL320_.jpg",
-    "rating": "4.6",
-    "reviews": "(1.2K)"
-  },
-  {
-    "title": "9\"x6\"x2\" Shipping Boxes Set of 2, White Corrugated Cardboard Box Literature Mailer",
-    "image": "https://m.media-amazon.com/images/I/61Ym8FwzqUL._AC_UL320_.jpg",
-    "rating": "4.6",
-    "reviews": "(1.1K)"
-  },
-  {
-    "title": "12\"x9\"x3\" Shipping Boxes Set of 1, White Corrugated Cardboard Box Literature Mailer",
-    "image": "https://m.media-amazon.com/images/I/6106+rQgs0L._AC_UL320_.jpg",
-    "rating": "4.6",
-    "reviews": "(1.1K)"
-  },
-  {
-    "title": "Brown Magnetic Gift Boxes with Lids 13.8x9x4.3 in, Large Bridesmaid Groomsman Proposal Box, Rectangle Collapsible Box for Present Graduation Birthday Storage 5 Pack",
-    "image": "https://m.media-amazon.com/images/I/6160VKJUK8L._AC_UL320_.jpg",
-    "rating": "4.5",
-    "reviews": "(1.5K)"
-  },
-  {
-    "title": "12x9x4 Inches Shipping Boxes Pack of 20, Small Corrugated Cardboard Box for Mailing Packing Literature Mailer",
-    "image": "https://m.media-amazon.com/images/I/61sH+rsIwXL._AC_UL320_.jpg",
-    "rating": "4.7",
-    "reviews": "(3.3K)"
-  },
-  {
-    "title": "11x8x4 inch Shipping Boxes 20 Pack,Brown Mailer Corrugated Cardboard Boxes Commerce Packaging Boxes for Storage Book Gifts Craft",
-    "image": "https://m.media-amazon.com/images/I/71xwqXLs0RL._AC_UL320_.jpg",
-    "rating": "4.3",
-    "reviews": "(45)"
-  },
-  {
-    "title": "12x9x4 Inches Shipping Boxes Pack of 25, Small Corrugated Cardboard Box for Business Mailing Packaging, Brown",
-    "image": "https://m.media-amazon.com/images/I/71FpW8peUYL._AC_UL320_.jpg",
-    "rating": "4.7",
-    "reviews": "(3.4K)"
-  },
-  {
-    "title": "30Pcs Brown Kraft Paper DIY Party Boxes, 3.14x3.14x3 Inches, Foldable House Shaped Candy Boxes for Wedding, Bridal Shower, Birthday Party",
-    "image": "https://m.media-amazon.com/images/I/710EwVMGLkL._AC_UL320_.jpg",
-    "rating": "4.4",
-    "reviews": "(13)"
-  },
-  {
-    "title": "12x9x4 Inches Shipping Boxes Set of 18, Large Assorted Colors Corrugated Cardboard Box, Tab Locking Literature Mailer Box for Small Business, Packing, Wrapping Present",
-    "image": "https://m.media-amazon.com/images/I/81ATBVp3nmL._AC_UL320_.jpg",
-    "rating": "4.3",
-    "reviews": "(42)"
-  },
-  {
-    "title": "Hallmark Gift Boxes 3-Pack Assorted Sizes (Flowers and Stripes) for Valentine's Day, Birthdays, Bridal Showers, Mother's Day, Best Friends, Gifts for Her, Wrapped Treats and Cookies",
-    "image": "https://m.media-amazon.com/images/I/81SYLAay3uL._AC_UL320_.jpg",
-    "rating": "4.7",
-    "reviews": "(523)"
-  },
-  {
-    "title": "6 x 6 x 6 Shipping Boxes, 30 Pack Corrugated Cardboard Mailing Boxes for Small Business, Colorful Packing Boxes for Small Orders & Packaging",
-    "image": "https://m.media-amazon.com/images/I/71P1DnpYyhL._AC_UL320_.jpg",
-    "rating": "4.8",
-    "reviews": "(196)"
-  },
-  {
-    "title": "10x8x2 Shipping Boxes Medium, 40 Pack Colorful Corrugated Cardboard Mailer Boxes for Small Business, Mailing, Packaging",
-    "image": "https://m.media-amazon.com/images/I/61YQdD7u2+L._AC_UL320_.jpg",
-    "rating": "4.7",
-    "reviews": "(164)"
-  },
-  {
-    "title": "12 White Gift Wrap Boxes with Lids for wrapping Large Clothes (Assorted Sizes for Robes, Blankets & Shirts)and 80 Different Occasion Tag Stickers -Perfect for Mother\u2019s,Father\u2019s Day,Birthdays, Baby Showers, Weddings",
-    "image": "https://m.media-amazon.com/images/I/61b1Mxo-tmL._AC_UL320_.jpg",
-    "rating": "4.5",
-    "reviews": "(1.2K)"
-  },
-  {
-    "title": "50Pcs Brown Party Treat Bags Boxes, Tiny Gift Boxes with DIY Tag, 2.75x1.37x4.3 inches Kraft Paper DIY Party Favor Boxes Foldable for Wedding Bridal Shower Birthday",
-    "image": "https://m.media-amazon.com/images/I/71WBEAtf11L._AC_UL320_.jpg",
-    "rating": "4.9",
-    "reviews": "(17)"
-  },
-  {
-    "title": "LumyHavver Gift Box 9.65x9.65x3.6 Inches, White with Magnetic Lid, Collapsible with Ribbon, Raffia Grass, Card, for Birthdays, Christmas, or Parties, Gift Packaging",
-    "image": "https://m.media-amazon.com/images/I/51kOLFk9PdL._AC_UL320_.jpg",
-    "rating": "4.9",
-    "reviews": "(30)"
-  },
-  {
-    "title": "vivinin Black Gift Box, 9x6x4 In Collapsible Gift Boxes with Lids for Presents, Contains Card and Ribbon, Magnetic Closure Rectangle Box for Birthday, Wedding, Wrapping Gifts",
-    "image": "https://m.media-amazon.com/images/I/51uTzKSxc5L._AC_UL320_.jpg",
-    "rating": "4.2",
-    "reviews": "(31)"
-  },
-  {
-    "title": "White Shipping Boxes 6x4x3\" 60 Pack - Corrugated Cardboard Mailing Boxes for Small Business - Literature Mailer Packaging Supplies",
-    "image": "https://m.media-amazon.com/images/I/813m+KhnRQL._AC_UL320_.jpg",
-    "rating": "4.6",
-    "reviews": "(104)"
-  },
-  {
-    "title": "White Small Shipping Boxes, 30 Packs Cardboard Mailer Boxes for Packaging Small Business with Lids (10x7x5, 9x6x4, 8x6x4)",
-    "image": "https://m.media-amazon.com/images/I/61H+EvsdARL._AC_UL320_.jpg",
-    "rating": "4.4",
-    "reviews": "(16)"
-  },
-  {
-    "title": "200 4x6 Thermal Labels Fanfold, Direct Thermal Shipping Labels - Perforated and Strong Adhesive",
-    "image": "https://m.media-amazon.com/images/I/71mK-eubueL._AC_UL320_.jpg",
-    "rating": "4.7",
-    "reviews": "(2.2K)"
-  },
-  {
-    "title": "4x4x2 Shipping Boxes Set of 6, Small Cardboard Boxes for Packaging, Brown Mailing for Small Business",
-    "image": "https://m.media-amazon.com/images/I/71HPxf5R8uL._AC_UL320_.jpg",
-    "rating": "4.7",
-    "reviews": "(505)"
-  },
-  {
-    "title": "8x8x4 Inches Gift Boxes 12 PCS Brown Paper Gift Boxes with Lids for Gifts, Wedding Present, Bridesmaid Proposal Box, Birthday Party Favor, Easy Assemble Box with 66ft Twine",
-    "image": "https://m.media-amazon.com/images/I/61skczMbN8L._AC_UL320_.jpg",
-    "rating": "4.7",
-    "reviews": "(9.1K)"
-  },
-  {
-    "title": "2 Pack Black Hard Gift Box with Magnetic Closure Lid 7\" x 5\" x 1.6\" Rectangle Boxes For Gifts With Black Glossy Finish (Black, 2 Boxes)",
-    "image": "https://m.media-amazon.com/images/I/61tt4+KbCxL._AC_UL320_.jpg",
-    "rating": "4.5",
-    "reviews": "(609)"
-  },
-  {
-    "title": "Premium Gift Boxes 10 Pack 8 x 8 x 4 Brown Paper Gift Boxes with 20 Meters Hemp Rope for Christmas Gifts, Bridesmaid Proposal Boxes, Easy Assemble Boxes",
-    "image": "https://m.media-amazon.com/images/I/71gR4R1BV9L._AC_UL320_.jpg",
-    "rating": "4.7",
-    "reviews": "(2.6K)"
-  },
-  {
-    "title": "Shipping Boxes 9x6x2 inches Brown Small Mailing Boxes 25 Pack Cardboard Corrugated Box Mailers",
-    "image": "https://m.media-amazon.com/images/I/71Og6eFZDhL._AC_UL320_.jpg",
-    "rating": "4.7",
-    "reviews": "(1.6K)"
-  },
-  {
-    "title": "Pink Gift Box - 11x7.6x3.5 Inches Gift Boxes with Lids and Handles, Portable Magnetic Gift Boxes for Presents, Large Gift Box for Women",
-    "image": "https://m.media-amazon.com/images/I/618inS8SOuL._AC_UL320_.jpg",
-    "rating": "4.6",
-    "reviews": "(449)"
-  },
-  {
-    "title": "12 Pack Gift Boxes with Lids,10x10x10cm,Nested Squared Boxes with Lids for Fathers Day, Graduations, Weddings, Birthdays and Christmas, Gift Box, New Year Gift Box,Mother's Day(Gold, 4\u201d\u00d74\u201d\u00d74\u201d)",
-    "image": "https://m.media-amazon.com/images/I/61Qgkqn+0DL._AC_UL320_.jpg",
-    "rating": "4.4",
-    "reviews": "(805)"
-  },
-  {
-    "title": "Corrugated Shipping Boxes 9x6x2Inches, 30Pack Kraft Cardboard Literature Mailers, Durable Small Business Mailing Boxes for Packaging & Shipping Supplies, Brown,Shipping boxes made from recycled paper",
-    "image": "https://m.media-amazon.com/images/I/61yBo5+BUFL._AC_UL320_.jpg",
-    "rating": "4.8",
-    "reviews": "(10)"
-  },
-  {
-    "title": "Xxcxpark 16 PCS Brown Kraft Gift Boxes 8x8x4 Inches, Decorative Party Favor Kraft Paper Gift Packaging Box with Lid for DIY Crafting, Cube, Cupcake, Kraft Present Boxes for Birthday, Wedding",
-    "image": "https://m.media-amazon.com/images/I/61EaFlsWvOL._AC_UL320_.jpg",
-    "rating": "4.7",
-    "reviews": "(925)"
-  },
-  {
-    "title": "Box USA 18\" Deluxe Shipping Boxes 18\"L x 12\"W x 2\"H, 50-Pack - White Box Mailers for Packaging, Storage, Gifts or Bulk Business Orders",
-    "image": "https://m.media-amazon.com/images/I/61TbqSDJFaL._AC_UL320_.jpg",
-    "rating": "4.1",
-    "reviews": "(74)"
-  },
-  {
-    "title": "9x6x2 Inches Shipping Boxes Set - (20 Pack) Navy Corrugated Cardboard Mailer Boxes for Packing Small Business Mailing Gift",
-    "image": "https://m.media-amazon.com/images/I/51z5ujJgPWL._AC_UL320_.jpg",
-    "rating": "4.6",
-    "reviews": "(13)"
-  },
-  {
-    "title": "12x9x2 Shipping Boxes Set of 1, White Corrugated Cardboard Box for Packing, Mailing, Business",
-    "image": "https://m.media-amazon.com/images/I/61xQZoLAUZL._AC_UL320_.jpg",
-    "rating": "4.8",
-    "reviews": "(2.8K)"
-  },
-  {
-    "title": "40-Pack-Small-Shipping-Boxes-6x4x4, Corrugated-Cardboard-Boxes-for-Packaging-Small-Business, Brown-Boxes-Mailers",
-    "image": "https://m.media-amazon.com/images/I/71RTTJhMmQL._AC_UL320_.jpg",
-    "rating": "4.7",
-    "reviews": "(699)"
-  },
-  {
-    "title": "1 Pack Brown Kraft Ribbed Hard Gift Box With Magnetic Closure Lid 8\"x8\"x4\" Square Favor Boxes With Classy Ribbed Paper Finish\u2026",
-    "image": "https://m.media-amazon.com/images/I/71uOTAd44lL._AC_UL320_.jpg",
-    "rating": "4.3",
-    "reviews": "(69)"
-  },
-  {
-    "title": "6x6x4 Gift Boxes with 98ft Twine 20 Pack White Paper Gift Boxes with Lids for Gifts, Crafting Cupcake Boxes, Easy Assemble Bridesmaids Proposal Boxes",
-    "image": "https://m.media-amazon.com/images/I/51t9kUrXs5L._AC_UL320_.jpg",
-    "rating": "4.7",
-    "reviews": "(423)"
-  },
-  {
-    "title": "12x10x4 inch Shipping Boxes Set of 15 Brown, Inner Size 11.6x9.6x1.6 inch Cardboard Box Mailers for Small Business Packaging Mailing or Gift Wrapping Giving",
-    "image": "https://m.media-amazon.com/images/I/61lshpqiY7L._AC_UL320_.jpg",
-    "rating": "4.7",
-    "reviews": "(505)"
-  },
-  {
-    "title": "Mefleet 12x12x5 Inches Large Gift Boxes with Lids 10 Pack Bridesmaid Proposal White Extra Deep Gift Box for Presents, Wedding, Graduation, Holiday, Christmas, Birthday Craft Present Wrapping",
-    "image": "https://m.media-amazon.com/images/I/61LMfSsrzKL._AC_UL320_.jpg",
-    "rating": "4.1",
-    "reviews": "(76)"
-  },
-  {
-    "title": "Dark Blue Shipping Packaging Boxs KAXILU 20pcs Shipping Boxs L13xW9xH2 inch Suitable E-Commerce Packaging",
-    "image": "https://m.media-amazon.com/images/I/51LRVoDbyVL._AC_UL320_.jpg",
-    "rating": "5.0",
-    "reviews": "(16)"
-  },
-  {
-    "title": "White Gift Box with Magnetic Closure Lid 10\" X 6\" X 3\" Gift Boxe for Presents,Luxury for Gift Packaging, Bridesmaid Gifts Boxes,Birthday Gift Box",
-    "image": "https://m.media-amazon.com/images/I/41PK1xwd8PL._AC_UL320_.jpg",
-    "rating": "4.5",
-    "reviews": "(773)"
-  },
-  {
-    "title": "Moukiween 12 Pack Small Shipping Boxes 6x4x3 Inch Corrugated Small Cardboard Boxs for Shipping, Packaging Boxes for Business, Gift Packing, Mailer, DIY Crafts Packing (Brown)",
-    "image": "https://m.media-amazon.com/images/I/618Vj23HvGL._AC_UL320_.jpg",
-    "rating": "4.5",
-    "reviews": "(19)"
-  },
-  {
-    "title": "White Hard Gift Box with Magnetic Closure Lid 7 inch x 5 inch x 1.6 inch Rectangle Small Boxes For Gifts With White Glossy Finish (5 Boxes), 1 Count (Pack of 5)",
-    "image": "https://m.media-amazon.com/images/I/71HNaDDPY6L._AC_UL320_.jpg",
-    "rating": "4.4",
-    "reviews": "(889)"
-  },
-  {
-    "title": "Premium White Gift Box with Magnetic Closure - 14x9x4 inches - Includes Ribbon and Gift Card - Elegant Presentation Box for All Occasions",
-    "image": "https://m.media-amazon.com/images/I/61Ua2myhBoL._AC_UL320_.jpg",
-    "rating": "4.7",
-    "reviews": "(112)"
-  },
-  {
-    "title": "9x6x4 Inches Shipping Boxes Set of 15,White Corrugated Cardboard Box Literature Mailer for Small Business, Literature Mailer Box Packaging Supplies",
-    "image": "https://m.media-amazon.com/images/I/71XZdL6qS9L._AC_UL320_.jpg",
-    "rating": "4.8",
-    "reviews": "(31)"
-  },
-  {
-    "title": "12 Pack 6x4x3 Inch Small Shipping Boxes - Brown Corrugated Cardboard Mailer Packing Boxes for Small Business Mailing Boxes for Packaging, Bulk",
-    "image": "https://m.media-amazon.com/images/I/61uGJwm70ML._AC_UL320_.jpg",
-    "rating": "4.8",
-    "reviews": "(1K)"
-  },
-  {
-    "title": "Black Gift Box 10\" x 6\" x 3\" with Magnetic Closure Lid Gift Boxe for Presents,Bridesmaid Gifts Boxes,Cute Box,Birthday Box,Luxury for Gift Packaging, Magnetic Gift Boxe for Wrapping Gifts (Black)",
-    "image": "https://m.media-amazon.com/images/I/41u9gXv9CtL._AC_UL320_.jpg",
-    "rating": "4.6",
-    "reviews": "(1.7K)"
-  },
-  {
-    "title": "6x4x2 Inch Small Shipping Boxes for Small Business, 30 Pack Purple Mailing Boxes Corrugated Cardboard Mailer Gift Packaging Box",
-    "image": "https://m.media-amazon.com/images/I/61Q6SQqtgNL._AC_UL320_.jpg",
-    "rating": "4.8",
-    "reviews": "(506)"
-  },
-  {
-    "title": "Purple Shipping Packaging L10.5xW6.3xH2 inch MEIANJU Hard Corrugated Cardboard Shipping Boxs Gift Wrap Box for Bridesmaid Proposal,Invitations, Wedding,Christmas,Anniversary",
-    "image": "https://m.media-amazon.com/images/I/61oIhymM3vL._AC_UL320_.jpg",
-    "rating": "4.7",
-    "reviews": "(5)"
-  },
-  {
-    "title": "Giftilious Black Gift Boxes, a Set of 5 Gift Boxes with Lids for Presents, Pre-Wrapped Boxes for Gifts, Sturdy Present Box for Birthdays, Weddings, Anniversaries, Festivals or Special Celebration",
-    "image": "https://m.media-amazon.com/images/I/61iG9AEsK+L._AC_UL320_.jpg",
-    "rating": "4.2",
-    "reviews": "(79)"
-  },
-  {
-    "title": "30 Pack 7x5x1 Black Shipping Boxes, Small Cardboard Mailer Boxes for Small Business Packaging",
-    "image": "https://m.media-amazon.com/images/I/615pKPP8b4L._AC_UL320_.jpg",
-    "rating": "4.7",
-    "reviews": "(1.2K)"
-  },
-  {
-    "title": "First Communion Keepsake Box, Engraved Wooden Rosary Box with Felt Lining, Catholic 1st First Holy Communion Gift, Ideal for Rosary Storage, Jewelry, and Religious Mementos Organizer",
-    "image": "https://m.media-amazon.com/images/I/71rRqcfUKJL._AC_UL320_.jpg",
-    "rating": "4.5",
-    "reviews": "(9)"
-  },
-  {
-    "title": "25 Packs Small Shipping Boxes 8x8x2 Inches, White Corrugated Cardboard Box for Shipping, Packing, Business, DIY",
-    "image": "https://m.media-amazon.com/images/I/711c3g2rhgL._AC_UL320_.jpg",
-    "rating": "4.6",
-    "reviews": "(141)"
-  },
-  {
-    "title": "Shipping Boxes 10 x 7 x 5 inches Corrugated Cardboard Boxes for Shipping Package, 25 Pack",
-    "image": "https://m.media-amazon.com/images/I/51gTBTSsYlL._AC_UL320_.jpg",
-    "rating": "4.7",
-    "reviews": "(5.4K)"
-  },
-  {
-    "title": "Black Gift Box,Gift Boxes with Lids,10.2x7.4x3.1 Inches Black Gift Box with Ribbon and Magnetic Closure for Wrapping Gifts",
-    "image": "https://m.media-amazon.com/images/I/51yNK8BvZCL._AC_UL320_.jpg",
-    "rating": "4.7",
-    "reviews": "(304)"
-  },
-  {
-    "title": "30Pcs Brown Party Treat Boxes, 3x3x7 inches Kraft Paper DIY Party Favor Boxes Candy Boxes House Shaped Foldable for Wedding Bridal Shower Birthday Party",
-    "image": "https://m.media-amazon.com/images/I/71quUuhPepL._AC_UL320_.jpg",
-    "rating": "3.7",
-    "reviews": "(10)"
-  },
-  {
-    "title": "10 Pack 5x5x2 Inch Corrugated Shipping Boxes, Small Packing Cardboard Mailers Heavy-Duty Triple-Wall Carton Boxes",
-    "image": "https://m.media-amazon.com/images/I/61Fr9rAr5pL._AC_UL320_.jpg",
-    "rating": "4.9",
-    "reviews": "(16)"
-  },
-  {
-    "title": "100 Yards x 45mm Cute Packing Tape Love Printing Shipping Tape with Pink Letters Pattern Decorative Sticker Strips for Valentine's Decorations Parcel Packaging Boxes Sealing Gift Wrapping",
-    "image": "https://m.media-amazon.com/images/I/51aWTVBoEfL._AC_UL320_.jpg",
-    "rating": "",
-    "reviews": ""
-  },
-  {
-    "title": "Premium White Glossy Gift Box with Magnetic Closure 1 PACK - 10 x 7 x 3 Inches - Includes Ribbon and Gift Card - Elegant Presentation Box for All Occasions",
-    "image": "https://m.media-amazon.com/images/I/61uVmyGW71L._AC_UL320_.jpg",
-    "rating": "4.4",
-    "reviews": "(45)"
-  },
-  {
-    "title": "UoeRing 1 Pcs White Gift Box Large 13.5x11.8x4.7 inch Luxury Gift Box for Presents with Magnetic Closure Lid Collapsible,Birthday,Christmas,Contains Card, Ribbon, Tissue Paper,Shredded Paper Filler",
-    "image": "https://m.media-amazon.com/images/I/41T2BGKv-WL._AC_UL320_.jpg",
-    "rating": "4.6",
-    "reviews": "(291)"
-  },
-  {
-    "title": "1 Pcs Black Gift Box Large 13x11x5.3 Inch Black Magnetic Boxes with Crinkle Paper Red Large Gift Box with Shredded Paper Luxury Gift Boxes with Lids for Presents",
-    "image": "https://m.media-amazon.com/images/I/51tj2UswP+L._AC_UL320_.jpg",
-    "rating": "4.3",
-    "reviews": "(894)"
-  },
-  {
-    "title": "Green Gift Box with Window, 9x6.5x3.8 Inches, Clear Gift Box for Present Contains Ribbon, Card, Groomsman Proposal Box with Magnetic Lid (Glossy Green)",
-    "image": "https://m.media-amazon.com/images/I/61p08nOSKFL._AC_UL320_.jpg",
-    "rating": "4.7",
-    "reviews": "(887)"
-  },
-  {
-    "title": "DraDraLee Brown Kraft Paper Gift Shopping Handle Bags for Package 13x13x13inch",
-    "image": "https://m.media-amazon.com/images/I/61ny-Y1815L._AC_UL320_.jpg",
-    "rating": "4.7",
-    "reviews": "(555)"
-  },
-  {
-    "title": "RayofSun Brown Gift Boxes with Magnetic Lids for Presents,13.7x9x4.3 inch Large Rectangle Collapsible Decorative Boxes, Bridesmaid Groomsman Proposal Box for Wedding,Christmas,Birthday(3PCS)",
-    "image": "https://m.media-amazon.com/images/I/416sPEi4qCL._AC_UL320_.jpg",
-    "rating": "4.3",
-    "reviews": "(176)"
-  },
-  {
-    "title": "1 Pack White Hard Gift Box With Magnetic Closure Lid 8\"x8\"x4\" Square Favor Boxes With White Glossy Finish (1 BOX)",
-    "image": "https://m.media-amazon.com/images/I/51J13vETvWL._AC_UL320_.jpg",
-    "rating": "4.5",
-    "reviews": "(140)"
-  },
-  {
-    "title": "Party Funny 12 Kraft Gift Extra Large Wrap Boxes Bulk with Lids\uff0c12 Tissue paper and 80 Different Occasion Tag Stickers for Mother\u2019s, Father\u2019s Day,Birthdays, Baby Showers, Weddings Presents Packaging",
-    "image": "https://m.media-amazon.com/images/I/71CRtn7laeL._AC_UL320_.jpg",
-    "rating": "4.6",
-    "reviews": "(72)"
-  },
-  {
-    "title": "Vintage Mailboxes for Outside with Stand,Metal Mailbox and Stand Combination,Decorative Mailbox for Parcels, Envelopes & Garden Storage",
-    "image": "https://m.media-amazon.com/images/I/81UIy34hS8L._AC_UL320_.jpg",
-    "rating": "5.0",
-    "reviews": "(3)"
-  },
-  {
-    "title": "Jewelry Package Paper Gift Box Red Ribbon Bow-Knot 3 3/4-Inch by 3 3/4-Inch",
-    "image": "https://m.media-amazon.com/images/I/7174ezCNk+L._AC_UL320_.jpg",
-    "rating": "4.5",
-    "reviews": "(143)"
-  },
-  {
-    "title": "Cute Small Business Stickers,Funny You're Gonna Love What's Inside Sticker for Mail Envelopes Business Shipping Package Packaging 500 PCS",
-    "image": "https://m.media-amazon.com/images/I/61sRuUTPhCL._AC_UL320_.jpg",
-    "rating": "5.0",
-    "reviews": "(13)"
-  },
-  {
-    "title": "Shipping Boxes,9\" x 6\" x 4\" Which is Anti-Impact Come with Exquisite Sealing Label.Suitable E-Commerce Packaging, Shipping Packaging.",
-    "image": "https://m.media-amazon.com/images/I/51n8C4kbpxL._AC_UL320_.jpg",
-    "rating": "4.5",
-    "reviews": "(1K)"
-  },
-  {
-    "title": "LaRibbons Large Gift Boxes with Lids, 10x10x10 Inches Brown Coffee Square Foldable Gift Boxes for Birthday, Wedding, Christmas, Baby Shower, Party, All Occasion",
-    "image": "https://m.media-amazon.com/images/I/81uL+3qTJTL._AC_UL320_.jpg",
-    "rating": "4.4",
-    "reviews": "(151)"
-  },
-  {
-    "title": "50Pcs Brown Party Treat Boxes, Tiny Gift Boxes with DIY Tag, 2 x 2 x 2 inches Kraft Paper DIY Party Favor Boxes Candy Boxes Foldable for Wedding Bridal Shower Birthday Party",
-    "image": "https://m.media-amazon.com/images/I/71x5Ur0gMsL._AC_UL320_.jpg",
-    "rating": "4.9",
-    "reviews": "(21)"
-  },
-  {
-    "title": "50 Pack 4x4x2'' Small Shipping Boxes, Corrugated Cardboard Mailers for Business, White (CM442)",
-    "image": "https://m.media-amazon.com/images/I/51f+P3W8TtL._AC_UL320_.jpg",
-    "rating": "4.7",
-    "reviews": "(2K)"
-  },
-  {
-    "title": "50 Pack DIY Assembly White 7 x 4 3/8 x 1\u00bd inches Cookies Boxes with Window Bakery Packaging for Macaron Cakesickle Chocolate",
-    "image": "https://m.media-amazon.com/images/I/71RwMGnYDcL._AC_UL320_.jpg",
-    "rating": "4.7",
-    "reviews": "(382)"
-  },
-  {
-    "title": "Hallmark Signature Large Gift Box (Gold Stripe) for Valentines Day, Weddings, Anniversaries, Birthdays, Bridesmaids Gifts and More",
-    "image": "https://m.media-amazon.com/images/I/716HYukSRwL._AC_UL320_.jpg",
-    "rating": "4.8",
-    "reviews": "(468)"
-  },
-  {
-    "title": "5x5x5 inch White Shipping Boxes, Corrugated Cardboard Small Boxes with Fragile Stickers for Business Mailing, Packing, Moving, Storage, 15 Pack",
-    "image": "https://m.media-amazon.com/images/I/615zWZV2LfL._AC_UL320_.jpg",
-    "rating": "4.9",
-    "reviews": "(62)"
+    "category": "Small Boxes",
+    "rating": 4.5,
+    "reviews": "9",
+    "inStock": true,
+    "stock": 160
+  },
+  {
+    "id": "prod-9",
+    "title": "Medium Shipping Boxes 8x6x4 Inches - 20 Pack",
+    "description": "Versatile corrugated boxes measuring 8\"×6\"×4\". Sold in 20-pack. Ideal for small to medium products, books, and accessories. Durable 3-ply construction. Easy to assemble and seal.",
+    "price": 19,
+    "originalPrice": 26,
+    "image": "https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261",
+    "category": "Shipping Boxes",
+    "rating": 4.6,
+    "reviews": "150",
+    "inStock": true,
+    "stock": 190
+  },
+  {
+    "id": "prod-10",
+    "title": "Large Corrugated Boxes 14x10x6 Inches - 15 Pack",
+    "description": "Extra-large shipping boxes measuring 14\"×10\"×6\". Available in 15-pack. Perfect for bulky items, multiple products, or large gifts. Heavy-duty 5-ply construction. Reinforced corners for added strength.",
+    "price": 32,
+    "originalPrice": 42,
+    "image": "https://images.unsplash.com/photo-1580169980114-ccd0babfa840",
+    "category": "Large Boxes",
+    "rating": 4.7,
+    "reviews": "85",
+    "inStock": true,
+    "stock": 140
+  },
+  {
+    "id": "prod-11",
+    "title": "White Gift Boxes 10x8x5 Inches - 12 Pack",
+    "description": "Premium white gift boxes sized 10\"×8\"×5\". Sold in 12-pack. Perfect for weddings, baby showers, and special events. Clean white finish for elegant presentation. Easy assembly with tuck-top closure.",
+    "price": 24,
+    "originalPrice": 32,
+    "image": "https://images.unsplash.com/photo-1513885535751-8b9238bd345a",
+    "category": "Gift Boxes",
+    "rating": 4.5,
+    "reviews": "120",
+    "inStock": true,
+    "stock": 170
+  },
+  {
+    "id": "prod-12",
+    "title": "Kraft Mailer Boxes 12x6x4 Inches - 25 Pack",
+    "description": "Eco-friendly kraft mailer boxes measuring 12\"×6\"×4\". Available in 25-pack. Perfect for e-commerce shipping, subscription boxes, and product packaging. Natural brown kraft finish. Self-locking design.",
+    "price": 21,
+    "originalPrice": 29,
+    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64",
+    "category": "Shipping Boxes",
+    "rating": 4.6,
+    "reviews": "200",
+    "inStock": true,
+    "stock": 210
+  },
+  {
+    "id": "prod-13",
+    "title": "Small White Boxes 7x5x3 Inches - 30 Pack",
+    "description": "Compact white boxes sized 7\"×5\"×3\". Sold in 30-pack. Ideal for jewelry, cosmetics, small gifts, and retail packaging. Clean white finish. Lightweight yet sturdy construction.",
+    "price": 17,
+    "originalPrice": 24,
+    "image": "https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261",
+    "category": "Small Boxes",
+    "rating": 4.4,
+    "reviews": "95",
+    "inStock": true,
+    "stock": 220
+  },
+  {
+    "id": "prod-14",
+    "title": "Heavy Duty Shipping Boxes 16x12x8 Inches - 10 Pack",
+    "description": "Extra heavy-duty boxes measuring 16\"×12\"×8\". Available in 10-pack. Perfect for heavy items, electronics, and bulk shipping. 7-ply double-wall construction. Maximum strength and protection.",
+    "price": 38,
+    "originalPrice": 50,
+    "image": "https://images.unsplash.com/photo-1580169980114-ccd0babfa840",
+    "category": "Large Boxes",
+    "rating": 4.8,
+    "reviews": "65",
+    "inStock": true,
+    "stock": 95
+  },
+  {
+    "id": "prod-15",
+    "title": "Black Magnetic Gift Box 11x8x4 Inches - Premium",
+    "description": "Luxury black gift box sized 11\"×8\"×4\" with magnetic closure. Perfect for high-end gifts, corporate presents, and special occasions. Includes ribbon and tissue paper. Reusable design.",
+    "price": 13,
+    "originalPrice": 18,
+    "image": "https://images.unsplash.com/photo-1513885535751-8b9238bd345a",
+    "category": "Gift Boxes",
+    "rating": 4.7,
+    "reviews": "180",
+    "inStock": true,
+    "stock": 145
+  },
+  {
+    "id": "prod-16",
+    "title": "Literature Mailer Boxes 11x9x2 Inches - 20 Pack",
+    "description": "Slim profile mailer boxes measuring 11\"×9\"×2\". Sold in 20-pack. Perfect for books, documents, catalogs, and flat items. Easy assembly. Secure closure tabs.",
+    "price": 16,
+    "originalPrice": 22,
+    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64",
+    "category": "Shipping Boxes",
+    "rating": 4.5,
+    "reviews": "110",
+    "inStock": true,
+    "stock": 185
+  },
+  {
+    "id": "prod-17",
+    "title": "Cube Boxes 6x6x6 Inches - 25 Pack White",
+    "description": "Perfect cube boxes sized 6\"×6\"×6\". Available in 25-pack. Ideal for candles, mugs, small gifts, and retail products. Clean white finish. Versatile square design.",
+    "price": 20,
+    "originalPrice": 27,
+    "image": "https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261",
+    "category": "Specialty Boxes",
+    "rating": 4.6,
+    "reviews": "140",
+    "inStock": true,
+    "stock": 195
+  },
+  {
+    "id": "prod-18",
+    "title": "Corrugated Mailer Boxes 10x7x3 Inches - 30 Pack",
+    "description": "Slim corrugated mailers measuring 10\"×7\"×3\". Sold in 30-pack. Perfect for clothing, accessories, and flat products. Self-sealing design. Tear strip for easy opening.",
+    "price": 19,
+    "originalPrice": 26,
+    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64",
+    "category": "Shipping Boxes",
+    "rating": 4.5,
+    "reviews": "175",
+    "inStock": true,
+    "stock": 205
   }
 ]
