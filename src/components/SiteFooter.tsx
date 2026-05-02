@@ -1,0 +1,68 @@
+import { Link } from "@tanstack/react-router";
+import { Package, Mail, Phone, MapPin } from "lucide-react";
+import { navLinks } from "./SiteHeader";
+
+const policies = [
+  { to: "/shipping-policy", label: "Shipping Policy" },
+  { to: "/cancellation-refund", label: "Cancellation & Refund" },
+  { to: "/privacy-policy", label: "Privacy Policy" },
+  { to: "/terms-conditions", label: "Terms & Conditions" },
+] as const;
+
+export function SiteFooter() {
+  return (
+    <footer className="mt-20 border-t border-border bg-secondary/40">
+      <div className="mx-auto max-w-6xl px-4 py-12 grid gap-10 md:grid-cols-4">
+        <div>
+          <Link to="/" className="flex items-center gap-2 font-bold text-lg text-primary">
+            <Package className="h-6 w-6" />
+            <span>BoxCraft</span>
+          </Link>
+          <p className="mt-3 text-sm text-muted-foreground">
+            Premium corrugated shipping boxes & packaging solutions for businesses of every size.
+          </p>
+        </div>
+
+        <div>
+          <h4 className="font-semibold text-foreground mb-3">Navigate</h4>
+          <ul className="space-y-2 text-sm">
+            {navLinks.map((l) => (
+              <li key={l.to}>
+                <Link to={l.to} className="text-muted-foreground hover:text-primary transition-colors">
+                  {l.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div>
+          <h4 className="font-semibold text-foreground mb-3">Policies</h4>
+          <ul className="space-y-2 text-sm">
+            {policies.map((p) => (
+              <li key={p.to}>
+                <Link to={p.to} className="text-muted-foreground hover:text-primary transition-colors">
+                  {p.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div>
+          <h4 className="font-semibold text-foreground mb-3">Contact</h4>
+          <ul className="space-y-2 text-sm text-muted-foreground">
+            <li className="flex items-start gap-2"><MapPin className="h-4 w-4 mt-0.5 text-primary" /> 12 Industrial Park, Mumbai</li>
+            <li className="flex items-center gap-2"><Phone className="h-4 w-4 text-primary" /> +91 98765 43210</li>
+            <li className="flex items-center gap-2"><Mail className="h-4 w-4 text-primary" /> hello@boxcraft.in</li>
+          </ul>
+        </div>
+      </div>
+      <div className="border-t border-border">
+        <div className="mx-auto max-w-6xl px-4 py-4 text-center text-xs text-muted-foreground">
+          © {new Date().getFullYear()} BoxCraft Packaging. All rights reserved.
+        </div>
+      </div>
+    </footer>
+  );
+}
