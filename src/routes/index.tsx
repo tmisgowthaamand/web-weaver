@@ -1,176 +1,233 @@
 import { Link } from "react-router-dom";
 import { SiteLayout } from "@/components/SiteLayout";
-import products from "@/data/products.json";
-import { ArrowRight, Truck, Shield, Recycle, Star, Package, Award, Users, TrendingUp, CheckCircle, Sparkles } from "lucide-react";
+import products from "@/data/all-products.json";
+import { ArrowRight, Zap, Shield, Leaf, Star, Package, Award, Users, Sparkles, ChevronRight } from "lucide-react";
 
 export default function Index() {
   const featured = products.slice(0, 6);
   const totalProducts = products.length;
-  
+
   return (
     <SiteLayout>
-      {/* Hero */}
-      <section className="relative overflow-hidden" style={{ background: "var(--gradient-hero)" }}>
-        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0zNiAxOGMzLjMxNCAwIDYgMi42ODYgNiA2cy0yLjY4NiA2LTYgNi02LTIuNjg2LTYtNiAyLjY4Ni02IDYtNiIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utb3BhY2l0eT0iLjA1IiBzdHJva2Utd2lkdGg9IjIiLz48L2c+PC9zdmc+')] opacity-30"></div>
-        <div className="mx-auto max-w-7xl px-4 py-28 md:py-40 text-primary-foreground relative">
+      {/* Hero Section - Modern SaaS */}
+      <section className="relative overflow-hidden min-h-[90vh] flex items-center" style={{ background: "var(--gradient-hero)" }}>
+        <div className="absolute inset-0 opacity-20">
+          <div className="absolute top-20 left-10 w-72 h-72 rounded-full blur-3xl" style={{ background: "oklch(0.55 0.18 240 / 0.15)" }}></div>
+          <div className="absolute bottom-20 right-10 w-96 h-96 rounded-full blur-3xl" style={{ background: "oklch(0.65 0.16 140 / 0.10)" }}></div>
+        </div>
+
+        <div className="mx-auto max-w-7xl px-4 relative z-10">
           <div className="max-w-4xl">
-            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/20 backdrop-blur-sm text-sm font-medium mb-6 border border-white/20">
-              <Sparkles className="h-4 w-4" />
-              {totalProducts} Premium Products Available — Serving Chennai since 2017
-            </span>
-            <h1 className="text-5xl md:text-7xl font-bold leading-tight tracking-tight">
-              Packaging that protects, performs & delights.
+            <div className="inline-flex items-center gap-2 px-4 py-3 rounded-full border border-primary/20 bg-primary/5 backdrop-blur-sm mb-8">
+              <Sparkles className="h-4 w-4 text-primary" />
+              <span className="text-sm font-semibold text-primary">{totalProducts} Premium Products Collection</span>
+            </div>
+
+            <h1 className="text-6xl md:text-7xl font-bold mb-6 leading-tight text-foreground">
+              Premium Packaging
+              <span className="block text-transparent bg-clip-text" style={{ backgroundImage: "var(--gradient-accent)" }}>
+                Redefined
+              </span>
             </h1>
-            <p className="mt-6 max-w-2xl text-xl text-primary-foreground/95 leading-relaxed">
-              From premium corrugated mailers to custom gift boxes — delivering quality packaging solutions from our family-run workshop in Vyasarpadi, Chennai. Trusted by 500+ businesses across Tamil Nadu.
+
+            <p className="text-xl md:text-2xl text-muted-foreground mb-10 max-w-2xl leading-relaxed">
+              Elevate your brand with our premium packaging solutions. Trusted by 500+ businesses since 2017.
             </p>
-            <div className="mt-10 flex flex-wrap gap-4">
-              <Link to="/products" className="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-white text-primary font-bold text-lg hover:shadow-2xl hover:scale-105 transition-all">
-                Browse Products <ArrowRight className="h-5 w-5" />
+
+            <div className="flex flex-wrap gap-4">
+              <Link
+                to="/products"
+                className="inline-flex items-center gap-3 px-8 py-4 rounded-lg font-semibold text-lg text-primary-foreground transition-all hover:scale-105 hover:shadow-lg"
+                style={{
+                  background: "var(--color-primary)",
+                  boxShadow: "0 4px 12px rgba(85, 161, 211, 0.2)"
+                }}
+              >
+                Explore Products <ArrowRight className="h-5 w-5" />
               </Link>
-              <Link to="/enquiry" className="inline-flex items-center gap-2 px-8 py-4 rounded-xl border-2 border-white/40 text-white font-bold text-lg hover:bg-white/15 backdrop-blur-sm transition-all">
-                Get Bulk Quote
+              <Link
+                to="/enquiry"
+                className="inline-flex items-center gap-3 px-8 py-4 rounded-lg font-semibold text-lg transition-all border-2 border-accent text-accent hover:bg-accent/5"
+              >
+                Get Custom Quote <ChevronRight className="h-5 w-5" />
               </Link>
             </div>
-            <div className="mt-12 flex flex-wrap gap-8 text-primary-foreground/90">
-              <div className="flex items-center gap-2">
-                <CheckCircle className="h-5 w-5" />
-                <span className="font-medium">500+ Happy Clients</span>
+
+            <div className="grid grid-cols-3 gap-8 mt-16 pt-12 border-t border-border">
+              <div>
+                <div className="text-3xl font-bold text-primary mb-2">500+</div>
+                <p className="text-muted-foreground">Satisfied Clients</p>
               </div>
-              <div className="flex items-center gap-2">
-                <CheckCircle className="h-5 w-5" />
-                <span className="font-medium">Same-Day Dispatch</span>
+              <div>
+                <div className="text-3xl font-bold text-accent mb-2">50K+</div>
+                <p className="text-muted-foreground">Boxes Delivered</p>
               </div>
-              <div className="flex items-center gap-2">
-                <CheckCircle className="h-5 w-5" />
-                <span className="font-medium">100% Recyclable</span>
+              <div>
+                <div className="text-3xl font-bold text-primary mb-2">9 Yrs</div>
+                <p className="text-muted-foreground">Industry Experience</p>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Features Section */}
+      <section className="py-20 relative">
+        <div className="mx-auto max-w-7xl px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">Why We're Different</h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">Premium quality meets affordable pricing</p>
+          </div>
+
+          <div className="grid gap-8 md:grid-cols-3">
+            {[
+              {
+                icon: Zap,
+                title: "Lightning Fast",
+                desc: "Same-day dispatch in Chennai. 2-4 days across Tamil Nadu.",
+                color: "from-blue-500 to-cyan-500"
+              },
+              {
+                icon: Shield,
+                title: "Fortress Durability",
+                desc: "3-ply & 5-ply construction. Built to protect your products.",
+                color: "from-blue-500 to-green-500"
+              },
+              {
+                icon: Leaf,
+                title: "100% Eco-Friendly",
+                desc: "Recyclable materials. Sustainable practices throughout.",
+                color: "from-green-500 to-emerald-500"
+              },
+            ].map((feature) => (
+              <div
+                key={feature.title}
+                className="group p-8 rounded-2xl border border-border hover:border-primary/50 transition-all hover:shadow-lg hover:-translate-y-1"
+                style={{ background: "var(--color-card)", boxShadow: "var(--shadow-card)" }}
+              >
+                <div className={`inline-block p-4 rounded-xl bg-gradient-to-br ${feature.color} mb-5 group-hover:scale-110 transition-transform`}>
+                  <feature.icon className="h-7 w-7 text-white font-bold" />
+                </div>
+                <h3 className="text-2xl font-bold text-foreground mb-3">{feature.title}</h3>
+                <p className="text-muted-foreground leading-relaxed">{feature.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Featured Products Section */}
+      <section className="py-20 relative">
+        <div className="mx-auto max-w-7xl px-4">
+          <div className="flex items-end justify-between mb-12">
+            <div>
+              <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-2">Featured Collection</h2>
+              <p className="text-muted-foreground text-lg">Handpicked premium selections</p>
+            </div>
+            <Link
+              to="/products"
+              className="hidden md:flex items-center gap-2 text-primary font-semibold hover:gap-3 transition-all"
+            >
+              View All <ArrowRight className="h-5 w-5" />
+            </Link>
+          </div>
+
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            {featured.map((p, i) => {
+              const discount = Math.round(((p.originalPrice - p.price) / p.originalPrice) * 100);
+              return (
+                <Link key={p.id} to={`/product/${p.id}`} className="group">
+                  <div
+                    className="rounded-xl overflow-hidden border border-border hover:border-primary/50 transition-all hover:shadow-lg hover:-translate-y-1"
+                    style={{ background: "var(--color-card)" }}
+                  >
+                    <div className="aspect-square bg-gradient-to-br from-primary/10 to-accent/10 overflow-hidden relative">
+                      <img
+                        src={p.image}
+                        alt={p.title}
+                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                        suppressHydrationWarning
+                      />
+                      {discount > 0 && (
+                        <div className="absolute top-4 left-4 px-4 py-2 rounded-lg bg-gradient-to-r from-primary to-accent text-white font-semibold text-sm">
+                          {discount}% OFF
+                        </div>
+                      )}
+                      {i < 3 && (
+                        <div className="absolute top-4 right-4 px-4 py-2 rounded-lg bg-accent text-accent-foreground font-semibold text-sm">
+                          ★ FEATURED
+                        </div>
+                      )}
+                    </div>
+                    <div className="p-6">
+                      <h3 className="font-semibold text-lg text-foreground line-clamp-2 mb-3 group-hover:text-primary transition-colors">
+                        {p.title}
+                      </h3>
+                      <div className="flex items-center gap-2 mb-4">
+                        <Star className="h-4 w-4 fill-accent text-accent" />
+                        <span className="text-sm font-semibold text-foreground">{p.rating}</span>
+                        <span className="text-xs text-muted-foreground">({p.reviews})</span>
+                      </div>
+                      <div className="flex items-baseline gap-2">
+                        <span className="text-2xl font-bold text-primary">₹{p.price}</span>
+                        <span className="text-sm text-muted-foreground line-through">₹{p.originalPrice}</span>
+                        <span className="text-xs font-semibold text-accent bg-accent/10 px-2 py-1 rounded">
+                          Save ₹{p.originalPrice - p.price}
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </Link>
+              );
+            })}
           </div>
         </div>
       </section>
 
       {/* Stats Section */}
-      <section className="mx-auto max-w-7xl px-4 -mt-16 relative z-10">
-        <div className="grid gap-6 md:grid-cols-4 bg-card rounded-2xl p-8 border border-border" style={{ boxShadow: "var(--shadow-soft)" }}>
-          {[
-            { icon: Users, value: "500+", label: "Satisfied Clients", color: "text-blue-600" },
-            { icon: Package, value: "50,000+", label: "Boxes Delivered", color: "text-purple-600" },
-            { icon: Award, value: "9 Years", label: "In Business", color: "text-pink-600" },
-            { icon: TrendingUp, value: "98%", label: "Client Retention", color: "text-green-600" },
-          ].map((stat) => (
-            <div key={stat.label} className="text-center">
-              <stat.icon className={`h-10 w-10 mx-auto mb-3 ${stat.color}`} />
-              <div className="text-3xl font-bold text-foreground">{stat.value}</div>
-              <div className="text-sm text-muted-foreground mt-1">{stat.label}</div>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* Features */}
-      <section className="mx-auto max-w-7xl px-4 py-20">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold">Why Choose Parveen Packaging?</h2>
-          <p className="text-muted-foreground mt-3 text-lg">Quality, reliability, and sustainability in every box we make</p>
-        </div>
-        <div className="grid gap-8 md:grid-cols-3">
-          {[
-            { 
-              icon: Truck, 
-              title: "Lightning-Fast Dispatch", 
-              desc: "Same-day pickup available in Chennai. Delivery within 2–4 days across Tamil Nadu. We understand your business can't wait.",
-              gradient: "from-blue-500 to-cyan-500"
-            },
-            { 
-              icon: Shield, 
-              title: "Built to Last", 
-              desc: "Heavy-duty 3-ply and 5-ply corrugated boards, rigorously tested for daily transit. Your products stay protected, guaranteed.",
-              gradient: "from-purple-500 to-pink-500"
-            },
-            { 
-              icon: Recycle, 
-              title: "100% Eco-Friendly", 
-              desc: "Fully recyclable kraft paper and responsibly sourced materials. Great for your business and better for our planet.",
-              gradient: "from-green-500 to-emerald-500"
-            },
-          ].map((f) => (
-            <div key={f.title} className="group p-8 rounded-2xl bg-card border border-border hover:border-primary/30 transition-all hover:-translate-y-2" style={{ boxShadow: "var(--shadow-card)" }}>
-              <div className={`inline-flex p-4 rounded-xl bg-gradient-to-br ${f.gradient} mb-5`}>
-                <f.icon className="h-8 w-8 text-white" />
+      <section className="py-16 relative border-t border-border">
+        <div className="mx-auto max-w-7xl px-4">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+            {[
+              { label: "Clients Served", value: "500+", icon: "👥" },
+              { label: "Boxes Delivered", value: "50K+", icon: "📦" },
+              { label: "Years Experience", value: "9", icon: "🏆" },
+              { label: "Retention Rate", value: "98%", icon: "💯" },
+            ].map((stat) => (
+              <div key={stat.label} className="text-center">
+                <div className="text-4xl mb-2">{stat.icon}</div>
+                <div className="text-3xl md:text-4xl font-bold text-foreground mb-1">{stat.value}</div>
+                <p className="text-muted-foreground text-sm">{stat.label}</p>
               </div>
-              <h3 className="font-bold text-xl mb-3">{f.title}</h3>
-              <p className="text-muted-foreground leading-relaxed">{f.desc}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* Featured Products */}
-      <section className="mx-auto max-w-7xl px-4 py-16" style={{ background: "var(--gradient-warm)" }}>
-        <div className="flex items-end justify-between mb-10">
-          <div>
-            <h2 className="text-4xl font-bold">Featured Packaging Solutions</h2>
-            <p className="text-muted-foreground mt-2 text-lg">Hand-picked best-sellers trusted by hundreds of businesses</p>
+            ))}
           </div>
-          <Link to="/products" className="hidden md:inline-flex items-center gap-2 text-primary font-semibold hover:gap-3 transition-all">
-            View All Products <ArrowRight className="h-5 w-5" />
-          </Link>
-        </div>
-        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-          {featured.map((p, i) => (
-            <article key={`featured-${i}-${p.title.slice(0, 20)}`} className="group rounded-2xl overflow-hidden bg-card border border-border hover:border-primary/40 hover:-translate-y-2 transition-all" style={{ boxShadow: "var(--shadow-card)" }}>
-              <div className="aspect-square bg-muted overflow-hidden relative">
-                <img 
-                  src={p.image} 
-                  alt={p.title} 
-                  loading="lazy" 
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                  suppressHydrationWarning
-                />
-                <div className="absolute top-3 right-3 px-3 py-1 rounded-full bg-accent text-accent-foreground text-xs font-bold">
-                  Popular
-                </div>
-              </div>
-              <div className="p-5">
-                <h3 className="font-semibold text-base line-clamp-2 min-h-12 group-hover:text-primary transition-colors">{p.title}</h3>
-                {p.rating && (
-                  <div className="mt-3 flex items-center gap-2 text-sm text-muted-foreground">
-                    <div className="flex items-center gap-1">
-                      <Star className="h-4 w-4 fill-amber-400 text-amber-400" /> 
-                      <span className="font-semibold text-foreground">{p.rating}</span>
-                    </div>
-                    {p.reviews && <span>· {p.reviews} reviews</span>}
-                  </div>
-                )}
-              </div>
-            </article>
-          ))}
-        </div>
-        <div className="mt-10 text-center">
-          <Link to="/products" className="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-primary text-primary-foreground font-bold hover:shadow-xl hover:scale-105 transition-all">
-            Explore Full Catalog <ArrowRight className="h-5 w-5" />
-          </Link>
         </div>
       </section>
 
       {/* CTA Section */}
-      <section className="mx-auto max-w-7xl px-4 py-20">
-        <div className="rounded-3xl p-12 md:p-16 text-center relative overflow-hidden" style={{ background: "var(--gradient-accent)" }}>
-          <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0zNiAxOGMzLjMxNCAwIDYgMi42ODYgNiA2cy0yLjY4NiA2LTYgNi02LTIuNjg2LTYtNiAyLjY4Ni02IDYtNiIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utb3BhY2l0eT0iLjA1IiBzdHJva2Utd2lkdGg9IjIiLz48L2c+PC9zdmc+')] opacity-20"></div>
-          <div className="relative z-10">
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">Ready to upgrade your packaging?</h2>
-            <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-              Join 500+ businesses who trust Parveen Packaging for their shipping and packaging needs. Get a custom quote today!
+      <section className="py-20 relative">
+        <div className="mx-auto max-w-6xl px-4">
+          <div
+            className="p-16 rounded-2xl text-center border border-border"
+            style={{
+              background: "linear-gradient(135deg, var(--gradient-accent))",
+              boxShadow: "0 4px 12px rgba(85, 161, 211, 0.1)"
+            }}
+          >
+            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">Ready to Elevate Your Brand?</h2>
+            <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
+              Get a personalized quote for your custom packaging needs
             </p>
-            <div className="flex flex-wrap gap-4 justify-center">
-              <Link to="/enquiry" className="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-white text-primary font-bold text-lg hover:shadow-2xl hover:scale-105 transition-all">
-                Request Bulk Quote <ArrowRight className="h-5 w-5" />
-              </Link>
-              <Link to="/contact" className="inline-flex items-center gap-2 px-8 py-4 rounded-xl border-2 border-white text-white font-bold text-lg hover:bg-white/15 transition-all">
-                Contact Us
-              </Link>
-            </div>
+            <Link
+              to="/enquiry"
+              className="inline-flex items-center gap-3 px-10 py-4 rounded-lg font-semibold text-lg text-primary-foreground transition-all hover:scale-105"
+              style={{
+                background: "var(--color-primary)",
+                boxShadow: "0 4px 12px rgba(85, 161, 211, 0.2)"
+              }}
+            >
+              Request Custom Quote <ArrowRight className="h-5 w-5" />
+            </Link>
           </div>
         </div>
       </section>

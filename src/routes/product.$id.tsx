@@ -1,6 +1,6 @@
 import { Link, useParams, useNavigate } from "react-router-dom";
 import { SiteLayout } from "@/components/SiteLayout";
-import products from "@/data/enhanced-products.json";
+import products from "@/data/all-products.json";
 import { useState } from "react";
 import { Star, ShoppingCart, Check, Minus, Plus, ArrowLeft, Package, Shield, Truck } from "lucide-react";
 import { useCart } from "@/contexts/CartContext";
@@ -78,23 +78,23 @@ export default function ProductDetail() {
                     key={i}
                     className={`h-5 w-5 ${
                       i < Math.floor(product.rating)
-                        ? "fill-amber-400 text-amber-400"
-                        : "text-gray-300"
+                        ? "fill-accent text-accent"
+                        : "text-muted-foreground"
                     }`}
                   />
                 ))}
               </div>
-              <span className="text-lg font-semibold">{product.rating}</span>
+              <span className="text-lg font-semibold text-foreground">{product.rating}</span>
               <span className="text-muted-foreground">({product.reviews} reviews)</span>
             </div>
 
             {/* Price */}
             <div className="mb-8">
-              <div className="flex items-baseline gap-3 mb-2">
+              <div className="flex items-baseline gap-3 mb-2 flex-wrap">
                 <span className="text-4xl font-bold text-primary">₹{product.price}</span>
                 <span className="text-2xl text-muted-foreground line-through">₹{product.originalPrice}</span>
-                <span className="px-3 py-1 rounded-full bg-green-100 text-green-700 text-sm font-bold">
-                  {discount}% OFF
+                <span className="px-3 py-1 rounded-full bg-accent/20 text-accent text-sm font-semibold">
+                  Save ₹{product.originalPrice - product.price}
                 </span>
               </div>
               <p className="text-sm text-muted-foreground">Inclusive of all taxes</p>
@@ -102,12 +102,12 @@ export default function ProductDetail() {
 
             {/* Stock Status */}
             {product.inStock ? (
-              <div className="flex items-center gap-2 text-green-600 mb-6">
+              <div className="flex items-center gap-2 text-accent mb-6">
                 <Check className="h-5 w-5" />
                 <span className="font-semibold">In Stock ({product.stock} units available)</span>
               </div>
             ) : (
-              <div className="text-red-600 font-semibold mb-6">Out of Stock</div>
+              <div className="text-destructive font-semibold mb-6">Out of Stock</div>
             )}
 
             {/* Quantity Selector */}
@@ -183,23 +183,48 @@ export default function ProductDetail() {
 
               <h3 className="text-xl font-bold mb-3">Key Features:</h3>
               <ul className="space-y-2 mb-6">
-                {product.features.map((feature, i) => (
-                  <li key={i} className="flex items-start gap-2">
-                    <Check className="h-5 w-5 text-primary shrink-0 mt-0.5" />
-                    <span>{feature}</span>
-                  </li>
-                ))}
+                {product.features ? (
+                  product.features.map((feature, i) => (
+                    <li key={i} className="flex items-start gap-2">
+                      <Check className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+                      <span>{feature}</span>
+                    </li>
+                  ))
+                ) : (
+                  <>
+                    <li className="flex items-start gap-2">
+                      <Check className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+                      <span>Premium Quality Materials</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <Check className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+                      <span>Durable Construction</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <Check className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+                      <span>Eco-Friendly</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <Check className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+                      <span>Easy to Use</span>
+                    </li>
+                  </>
+                )}
               </ul>
 
-              <h3 className="text-xl font-bold mb-3">Specifications:</h3>
-              <div className="grid gap-3">
-                {Object.entries(product.specifications).map(([key, value]) => (
-                  <div key={key} className="flex justify-between py-2 border-b border-border">
-                    <span className="font-semibold capitalize">{key.replace(/([A-Z])/g, ' $1').trim()}:</span>
-                    <span className="text-muted-foreground">{value}</span>
+              {product.specifications && (
+                <>
+                  <h3 className="text-xl font-bold mb-3">Specifications:</h3>
+                  <div className="grid gap-3">
+                    {Object.entries(product.specifications).map(([key, value]) => (
+                      <div key={key} className="flex justify-between py-2 border-b border-border">
+                        <span className="font-semibold capitalize">{key.replace(/([A-Z])/g, ' $1').trim()}:</span>
+                        <span className="text-muted-foreground">{value}</span>
+                      </div>
+                    ))}
                   </div>
-                ))}
-              </div>
+                </>
+              )}
             </div>
           </div>
         </div>

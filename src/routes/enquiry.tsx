@@ -10,17 +10,17 @@ export default function Enquiry() {
   return (
     <SiteLayout>
       {/* Header */}
-      <section className="py-16" style={{ background: "var(--gradient-warm)" }}>
-        <div className="mx-auto max-w-4xl px-4 text-center">
-          <h1 className="text-5xl md:text-6xl font-bold mb-4">Request a Bulk Quote</h1>
-          <p className="text-muted-foreground text-lg">
-            Tell us about your packaging needs and we'll get back to you within 24 hours with a competitive quote. 
-            No order is too small or too large — we serve businesses of all sizes.
+      <section className="relative overflow-hidden py-32" style={{ background: "var(--gradient-hero)" }}>
+        <div className="mx-auto max-w-4xl px-4 text-center text-foreground relative">
+          <h1 className="text-5xl md:text-6xl font-bold mb-6">Custom Packaging Quote</h1>
+          <p className="text-lg text-muted-foreground">
+            Share your packaging requirements and receive a personalized quote within 2 hours.
+            We serve businesses of all sizes.
           </p>
         </div>
       </section>
 
-      <div className="mx-auto max-w-6xl px-4 py-12">
+      <div className="mx-auto max-w-6xl px-4 py-16">
         <div className="grid gap-8 lg:grid-cols-3">
           {/* Form Section */}
           <div className="lg:col-span-2">
