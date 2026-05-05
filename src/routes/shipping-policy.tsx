@@ -1,7 +1,9 @@
 
 import { PolicyPage } from "@/components/PolicyPage";
+import { useCurrency } from "@/contexts/CurrencyContext";
 
 export default function ShippingPolicy() {
+  const { formatPrice } = useCurrency();
   return (
     <PolicyPage title="Shipping Policy">
       <p>At Parveen Packaging Industries, we are committed to delivering your packaging products safely and on time. This policy outlines our shipping procedures, timelines, and charges.</p>
@@ -21,8 +23,8 @@ export default function ShippingPolicy() {
       <h2>Shipping Charges</h2>
       <p>Shipping charges are calculated at checkout based on the weight of your order and delivery location. Our shipping rates are competitive and transparent:</p>
       <ul>
-        <li>Orders above ₹2,000 qualify for <strong>FREE shipping</strong> across India</li>
-        <li>Orders below ₹2,000 incur a flat shipping fee of ₹100</li>
+        <li>Orders above {formatPrice(2000)} qualify for <strong>FREE shipping</strong> across India</li>
+        <li>Orders below {formatPrice(2000)} incur a flat shipping fee of {formatPrice(100)}</li>
         <li>Bulk orders may have special shipping arrangements - please contact us for details</li>
       </ul>
       

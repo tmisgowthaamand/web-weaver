@@ -2,8 +2,10 @@ import { Link } from "react-router-dom";
 import { SiteLayout } from "@/components/SiteLayout";
 import products from "@/data/all-products.json";
 import { ArrowRight, Zap, Shield, Leaf, Star, Package, Award, Users, Sparkles, ChevronRight } from "lucide-react";
+import { useCurrency } from "@/contexts/CurrencyContext";
 
 export default function Index() {
+  const { formatPrice } = useCurrency();
   const featured = products.slice(0, 6);
   const totalProducts = products.length;
 
@@ -169,10 +171,10 @@ export default function Index() {
                         <span className="text-xs text-muted-foreground">({p.reviews})</span>
                       </div>
                       <div className="flex items-baseline gap-2">
-                        <span className="text-2xl font-bold text-primary">₹{p.price}</span>
-                        <span className="text-sm text-muted-foreground line-through">₹{p.originalPrice}</span>
+                        <span className="text-2xl font-bold text-primary">{formatPrice(p.price)}</span>
+                        <span className="text-sm text-muted-foreground line-through">{formatPrice(p.originalPrice)}</span>
                         <span className="text-xs font-semibold text-accent bg-accent/10 px-2 py-1 rounded">
-                          Save ₹{p.originalPrice - p.price}
+                          Save {formatPrice(p.originalPrice - p.price)}
                         </span>
                       </div>
                     </div>

@@ -4,15 +4,33 @@ import products from "@/data/all-products.json";
 import { useState } from "react";
 import { Star, ShoppingCart, Check, Minus, Plus, ArrowLeft, Package, Shield, Truck } from "lucide-react";
 import { useCart } from "@/contexts/CartContext";
+import { useCurrency } from "@/contexts/CurrencyContext";
+
+interface Product {
+  id: string;
+  title: string;
+  image: string;
+  price: number;
+  originalPrice: number;
+  rating: number;
+  reviews: string;
+  category: string;
+  description: string;
+  inStock: boolean;
+  stock: number;
+  features?: string[];
+  specifications?: Record<string, string | number>;
+}
 
 export default function ProductDetail() {
   const { id } = useParams();
   const navigate = useNavigate();
   const { addToCart } = useCart();
+  const { formatPrice } = useCurrency();
   const [quantity, setQuantity] = useState(1);
   const [added, setAdded] = useState(false);
 
-  const product = products.find((p) => p.id === id);
+  const product = products.find((p) => p.id === id) as Product | undefined;
 
   if (!product) {
     return (
@@ -91,10 +109,10 @@ export default function ProductDetail() {
             {/* Price */}
             <div className="mb-8">
               <div className="flex items-baseline gap-3 mb-2 flex-wrap">
-                <span className="text-4xl font-bold text-primary">₹{product.price}</span>
-                <span className="text-2xl text-muted-foreground line-through">₹{product.originalPrice}</span>
+                <span className="text-4xl font-bold text-primary">{formatPrice(product.price)}</span>
+                <span className="text-2xl text-muted-foreground line-through">{formatPrice(product.originalPrice)}</span>
                 <span className="px-3 py-1 rounded-full bg-accent/20 text-accent text-sm font-semibold">
-                  Save ₹{product.originalPrice - product.price}
+                  Save {formatPrice(product.originalPrice - product.price)}
                 </span>
               </div>
               <p className="text-sm text-muted-foreground">Inclusive of all taxes</p>
@@ -132,7 +150,7 @@ export default function ProductDetail() {
                   </button>
                 </div>
                 <span className="text-muted-foreground">
-                  Total: ₹{(product.price * quantity).toLocaleString('en-IN')}
+                  Total: {formatPrice(product.price * quantity)}
                 </span>
               </div>
             </div>
@@ -219,7 +237,7 @@ export default function ProductDetail() {
                     {Object.entries(product.specifications).map(([key, value]) => (
                       <div key={key} className="flex justify-between py-2 border-b border-border">
                         <span className="font-semibold capitalize">{key.replace(/([A-Z])/g, ' $1').trim()}:</span>
-                        <span className="text-muted-foreground">{value}</span>
+                        <span className="text-muted-foreground">{String(value)}</span>
                       </div>
                     ))}
                   </div>

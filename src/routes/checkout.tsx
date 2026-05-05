@@ -3,6 +3,7 @@ import { SiteLayout } from "@/components/SiteLayout";
 import { useCart } from "@/contexts/CartContext";
 import { useState, useEffect } from "react";
 import { CreditCard, Smartphone, Banknote, Building2, Check } from "lucide-react";
+import { useCurrency } from "@/contexts/CurrencyContext";
 
 
 
@@ -10,6 +11,7 @@ type PaymentMethod = "credit" | "debit" | "upi" | "cod";
 
 export default function Checkout() {
   const { cart, getTotalPrice, clearCart } = useCart();
+  const { formatPrice } = useCurrency();
   const navigate = useNavigate();
   const [paymentMethod, setPaymentMethod] = useState<PaymentMethod>("upi");
   const [isPlacingOrder, setIsPlacingOrder] = useState(false);
@@ -275,7 +277,7 @@ export default function Checkout() {
               {paymentMethod === "cod" && (
                 <div className="p-4 rounded-xl bg-amber-50 border border-amber-200">
                   <p className="text-sm text-amber-800">
-                    <strong>Note:</strong> You will pay ₹{finalTotal.toLocaleString('en-IN')} in cash when your order is delivered.
+                    <strong>Note:</strong> You will pay {formatPrice(finalTotal)} in cash when your order is delivered.
                   </p>
                 </div>
               )}
@@ -294,22 +296,22 @@ export default function Checkout() {
                       <p className="text-sm font-medium line-clamp-2">{item.title}</p>
                       <p className="text-sm text-muted-foreground">Qty: {item.quantity}</p>
                     </div>
-                    <p className="font-semibold">₹{(item.price * item.quantity).toLocaleString('en-IN')}</p>
+                    <p className="font-semibold">{formatPrice(item.price * item.quantity)}</p>
                   </div>
                 ))}
               </div>
               <div className="border-t border-border pt-4 space-y-3 mb-6">
                 <div className="flex justify-between">
                   <span className="text-muted-foreground">Subtotal</span>
-                  <span className="font-semibold">₹{totalPrice.toLocaleString('en-IN')}</span>
+                  <span className="font-semibold">{formatPrice(totalPrice)}</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="text-muted-foreground">Delivery</span>
-                  <span className="font-semibold">{deliveryCharge === 0 ? <span className="text-green-600">FREE</span> : `₹${deliveryCharge}`}</span>
+                  <span className="font-semibold">{deliveryCharge === 0 ? <span className="text-green-600">FREE</span> : formatPrice(deliveryCharge)}</span>
                 </div>
                 <div className="flex justify-between text-xl font-bold pt-3 border-t border-border">
                   <span>Total</span>
-                  <span className="text-primary">₹{finalTotal.toLocaleString('en-IN')}</span>
+                  <span className="text-primary">{formatPrice(finalTotal)}</span>
                 </div>
               </div>
               <button

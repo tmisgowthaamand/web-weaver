@@ -1,12 +1,14 @@
 import { Link } from "react-router-dom";
 import { SiteLayout } from "@/components/SiteLayout";
 import { useCart } from "@/contexts/CartContext";
+import { useCurrency } from "@/contexts/CurrencyContext";
 import { Minus, Plus, Trash2, ShoppingBag, ArrowRight } from "lucide-react";
 
 
 
 export default function Cart() {
   const { cart, updateQuantity, removeFromCart, clearCart, getTotalPrice } = useCart();
+  const { formatPrice } = useCurrency();
 
   if (cart.length === 0) {
     return (
@@ -65,7 +67,7 @@ export default function Cart() {
                 <div className="flex-1">
                   <h3 className="font-semibold text-lg mb-2">{item.title}</h3>
                   <p className="text-2xl font-bold text-primary mb-4">
-                    ₹{item.price.toLocaleString('en-IN')}
+                    {formatPrice(item.price)}
                   </p>
                   <div className="flex items-center gap-4">
                     <div className="flex items-center border-2 border-border rounded-lg">
@@ -95,7 +97,7 @@ export default function Cart() {
                 <div className="text-right">
                   <p className="text-sm text-muted-foreground mb-1">Subtotal</p>
                   <p className="text-2xl font-bold">
-                    ₹{(item.price * item.quantity).toLocaleString('en-IN')}
+                    {formatPrice(item.price * item.quantity)}
                   </p>
                 </div>
               </div>
@@ -112,7 +114,7 @@ export default function Cart() {
               <div className="space-y-4 mb-6">
                 <div className="flex justify-between">
                   <span className="text-muted-foreground">Subtotal</span>
-                  <span className="font-semibold">₹{totalPrice.toLocaleString('en-IN')}</span>
+                  <span className="font-semibold">{formatPrice(totalPrice)}</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="text-muted-foreground">Delivery Charges</span>
@@ -120,19 +122,19 @@ export default function Cart() {
                     {deliveryCharge === 0 ? (
                       <span className="text-green-600">FREE</span>
                     ) : (
-                      `₹${deliveryCharge}`
+                      formatPrice(deliveryCharge)
                     )}
                   </span>
                 </div>
                 {deliveryCharge > 0 && (
                   <p className="text-xs text-muted-foreground">
-                    Add ₹{(2000 - totalPrice).toLocaleString('en-IN')} more for FREE delivery
+                    Add {formatPrice(2000 - totalPrice)} more for FREE delivery
                   </p>
                 )}
                 <div className="border-t border-border pt-4">
                   <div className="flex justify-between text-xl font-bold">
                     <span>Total</span>
-                    <span className="text-primary">₹{finalTotal.toLocaleString('en-IN')}</span>
+                    <span className="text-primary">{formatPrice(finalTotal)}</span>
                   </div>
                 </div>
               </div>

@@ -4,6 +4,7 @@ import products from "@/data/all-products.json";
 import { Star, Search, Package, Filter, ShoppingCart, ArrowRight, X, ChevronDown } from "lucide-react";
 import { useState, useRef, useEffect } from "react";
 import { useCart } from "@/contexts/CartContext";
+import { useCurrency } from "@/contexts/CurrencyContext";
 
 export default function Products() {
   const [q, setQ] = useState("");
@@ -14,6 +15,7 @@ export default function Products() {
   const [showSortDropdown, setShowSortDropdown] = useState(false);
   const [showPriceFilter, setShowPriceFilter] = useState(false);
   const { addToCart } = useCart();
+  const { formatPrice } = useCurrency();
   const [addedItems, setAddedItems] = useState<Set<string>>(new Set());
   const sortRef = useRef<HTMLDivElement>(null);
   const priceRef = useRef<HTMLDivElement>(null);
@@ -166,8 +168,8 @@ export default function Products() {
                 {sort === "featured" && "Featured"}
                 {sort === "a-z" && "A → Z"}
                 {sort === "z-a" && "Z → A"}
-                {sort === "price-low" && "₹ Low to High"}
-                {sort === "price-high" && "₹ High to Low"}
+                {sort === "price-low" && "Price: Low to High"}
+                {sort === "price-high" && "Price: High to Low"}
               </span>
               <ChevronDown className={`h-4 w-4 transition-transform ${showSortDropdown ? "rotate-180" : ""}`} />
             </button>
@@ -204,7 +206,7 @@ export default function Products() {
                     sort === "price-low" ? "bg-primary/10 text-primary font-semibold" : "text-foreground hover:bg-secondary"
                   }`}
                 >
-                  ₹ Low to High
+                  Price: Low to High
                 </button>
                 <button
                   onClick={() => handleSortChange("price-high")}
@@ -212,7 +214,7 @@ export default function Products() {
                     sort === "price-high" ? "bg-primary/10 text-primary font-semibold" : "text-foreground hover:bg-secondary"
                   }`}
                 >
-                  ₹ High to Low
+                  Price: High to Low
                 </button>
               </div>
             )}
@@ -228,8 +230,8 @@ export default function Products() {
               className="px-4 py-3 rounded-lg border border-border text-foreground font-semibold text-sm hover:border-primary/50 transition-all flex items-center gap-2 whitespace-nowrap"
               style={{ background: "var(--color-card)" }}
             >
-              <span>₹ Price</span>
-              <span className="font-bold text-primary">{minPrice} - {maxPrice}</span>
+              <span>Price</span>
+              <span className="font-bold text-primary">{formatPrice(minPrice)} - {formatPrice(maxPrice)}</span>
               <ChevronDown className={`h-4 w-4 transition-transform ${showPriceFilter ? "rotate-180" : ""}`} />
             </button>
 
@@ -239,7 +241,7 @@ export default function Products() {
 
                 {/* Min Price */}
                 <div className="mb-4">
-                  <label className="text-sm text-muted-foreground block mb-2">Min Price: ₹{minPrice}</label>
+                  <label className="text-sm text-muted-foreground block mb-2">Min Price: {formatPrice(minPrice)}</label>
                   <input
                     type="range"
                     min={minProductPrice}
@@ -252,7 +254,7 @@ export default function Products() {
 
                 {/* Max Price */}
                 <div className="mb-4">
-                  <label className="text-sm text-muted-foreground block mb-2">Max Price: ₹{maxPrice}</label>
+                  <label className="text-sm text-muted-foreground block mb-2">Max Price: {formatPrice(maxPrice)}</label>
                   <input
                     type="range"
                     min={minProductPrice}
@@ -269,25 +271,25 @@ export default function Products() {
                     onClick={() => { setMinPrice(minProductPrice); setMaxPrice(500); }}
                     className="px-3 py-2 rounded text-sm bg-secondary text-foreground hover:bg-primary/20 transition-all"
                   >
-                    Under ₹500
+                    Under {formatPrice(500)}
                   </button>
                   <button
                     onClick={() => { setMinPrice(500); setMaxPrice(1500); }}
                     className="px-3 py-2 rounded text-sm bg-secondary text-foreground hover:bg-primary/20 transition-all"
                   >
-                    ₹500-1500
+                    {formatPrice(500)} - {formatPrice(1500)}
                   </button>
                   <button
                     onClick={() => { setMinPrice(1500); setMaxPrice(5000); }}
                     className="px-3 py-2 rounded text-sm bg-secondary text-foreground hover:bg-primary/20 transition-all"
                   >
-                    ₹1500-5000
+                    {formatPrice(1500)} - {formatPrice(5000)}
                   </button>
                   <button
                     onClick={() => { setMinPrice(5000); setMaxPrice(maxProductPrice); }}
                     className="px-3 py-2 rounded text-sm bg-secondary text-foreground hover:bg-primary/20 transition-all"
                   >
-                    Above ₹5000
+                    Above {formatPrice(5000)}
                   </button>
                 </div>
 
@@ -373,10 +375,10 @@ export default function Products() {
                   </div>
 
                   <div className="flex items-baseline gap-2 mb-4">
-                    <span className="text-2xl font-bold text-primary">₹{p.price}</span>
-                    <span className="text-sm text-muted-foreground line-through">₹{p.originalPrice}</span>
+                    <span className="text-2xl font-bold text-primary">{formatPrice(p.price)}</span>
+                    <span className="text-sm text-muted-foreground line-through">{formatPrice(p.originalPrice)}</span>
                     <span className="text-xs font-semibold text-accent bg-accent/10 px-2 py-1 rounded">
-                      Save ₹{p.originalPrice - p.price}
+                      Save {formatPrice(p.originalPrice - p.price)}
                     </span>
                   </div>
 

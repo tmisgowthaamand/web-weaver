@@ -2,8 +2,10 @@ import { useNavigate, useSearchParams } from "react-router-dom";
 import { SiteLayout } from "@/components/SiteLayout";
 import { CheckCircle2, Package, Mail, Phone, Home } from "lucide-react";
 import { useEffect } from "react";
+import { useCurrency } from "@/contexts/CurrencyContext";
 
 export default function OrderSuccess() {
+  const { formatPrice } = useCurrency();
   const navigate = useNavigate();
   const [searchParams] = useSearchParams();
   const orderId = searchParams.get('orderId') || '';
@@ -44,7 +46,7 @@ export default function OrderSuccess() {
             </div>
             <div className="flex justify-between items-center pb-4 border-b border-border">
               <span className="text-muted-foreground">Total Amount</span>
-              <span className="font-bold text-2xl text-primary">₹{amount.toLocaleString('en-IN')}</span>
+              <span className="font-bold text-2xl text-primary">{formatPrice(amount)}</span>
             </div>
             <div className="flex justify-between items-center">
               <span className="text-muted-foreground">Order Date</span>

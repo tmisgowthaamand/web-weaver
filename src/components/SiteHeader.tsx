@@ -2,6 +2,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Package, Menu, X, ShoppingCart } from "lucide-react";
 import { useState, useEffect } from "react";
 import { useCart } from "@/contexts/CartContext";
+import { useCurrency } from "@/contexts/CurrencyContext";
 
 export const navLinks = [
   { to: "/", label: "Home" },
@@ -15,6 +16,7 @@ export function SiteHeader() {
   const [open, setOpen] = useState(false);
   const location = useLocation();
   const { getTotalItems } = useCart();
+  const { currency, setCurrency } = useCurrency();
   const [mounted, setMounted] = useState(false);
   const [totalItems, setTotalItems] = useState(0);
 
@@ -52,6 +54,23 @@ export function SiteHeader() {
               </Link>
             );
           })}
+
+          <div className="flex items-center gap-1 ml-2 border-l border-border pl-4">
+            {(["INR", "EUR", "USD"] as const).map((c) => (
+              <button
+                key={c}
+                onClick={() => setCurrency(c)}
+                className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all ${
+                  currency === c
+                    ? "bg-primary text-primary-foreground shadow-sm"
+                    : "text-foreground/80 hover:bg-secondary/80"
+                }`}
+              >
+                {c}
+              </button>
+            ))}
+          </div>
+
           <Link
             to="/cart"
             className="relative px-5 py-2.5 rounded-xl text-sm font-semibold text-foreground/80 hover:text-primary hover:bg-secondary/80 transition-all flex items-center gap-2"
